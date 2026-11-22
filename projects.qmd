@@ -1,0 +1,34 @@
+---
+title: "Projects"
+---
+
+# Selected projects
+
+Use these pages/cards to showcase the projects most relevant to the roles you are applying for. Focus on your own contributions and evidence of results.
+
+## Project 1 — [Name]
+
+- **Problem:** [What needed to be solved?]
+- **My contribution:** [What did you do?]
+- **Tools:** [Tools, languages, hardware, methods]
+- **Outcome:** [Results, metrics, demonstrated impact]
+
+**Links:** [Code](#) · [Paper / report](#) · [Demo / figures](#)
+
+## Project 2 — [Name]
+
+- **Problem:** [Challenge]
+- **My contribution:** [Contribution]
+- **Tools:** [Technologies]
+- **Outcome:** [Result]
+
+**Links:** [Code](#) · [Report](#)
+
+## Project 3 — [Name]
+
+- **Problem:** [Challenge]
+- **My contribution:** [Contribution]
+- **Tools:** [Technologies]
+- **Outcome:** [Result]
+
+**Links:** [Code](#) · [Report](#)

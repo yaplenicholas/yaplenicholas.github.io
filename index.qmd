@@ -1,0 +1,51 @@
+---
+title: "Nicholas Yaple"
+---
+
+# Researcher · Engineer · Problem Solver
+
+Welcome to my portfolio. I am a **[your role / PhD field]** focused on **[research area or technical focus]**. I build, investigate, and develop **[methods / systems / technologies]** to address **[the problems you care about]**.
+
+<div class="hero-buttons">
+<a class="btn btn-primary" href="resume.pdf">Download Resume</a>
+<a class="btn btn-outline-primary" href="https://github.com/yaplenicholas">GitHub</a>
+<a class="btn btn-outline-primary" href="mailto:YOUR_EMAIL">Contact</a>
+</div>
+
+## Featured work
+
+::: {.project-card}
+### [Featured PhD Project](projects.qmd)
+
+**Problem:** [Briefly describe the challenge.]
+
+**Contribution:** [What you personally developed, designed, analyzed, or demonstrated.]
+
+**Result:** [Highlight a result, metric, publication, or impact.]
+
+[Explore project →](projects.qmd)
+:::
+
+::: {.project-card}
+### [Technical / Personal Project](projects.qmd)
+
+[Two sentences describing an independent project, technical contribution, and outcome.]
+
+[Explore project →](projects.qmd)
+:::
+
+## Research & expertise
+
+- **Research:** [Topic 1] · [Topic 2] · [Topic 3]
+- **Technical skills:** [Languages] · [Frameworks] · [Tools]
+- **Methods:** [Methods, experimental techniques, modeling, etc.]
+
+## About
+
+[Write a concise 3–5 sentence professional biography. Focus on your research and technical background, the problems you work on, and the kind of opportunities you are pursuing.]
+
+See [research and publications](research.qmd) for additional details.
+
+---
+
+<small>This website is a work in progress.</small>

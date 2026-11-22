@@ -1,0 +1,20 @@
+---
+title: "Research & Publications"
+---
+
+# Research
+
+**Dissertation / research focus:** [Title or short description of your PhD work.]
+
+[Describe your research program in a paragraph. Explain the problem, methods, and significance in language understandable to someone outside your immediate subfield.]
+
+## Publications
+
+- **[Author(s)], [Year].** [Paper title.] *[Journal / conference].* [DOI / link]
+- [Add papers, preprints, conference proceedings, posters, or presentations.]
+
+## Research contributions
+
+- [Contribution, method, or finding]
+- [Contribution, method, or finding]
+- [Contribution, method, or finding]
