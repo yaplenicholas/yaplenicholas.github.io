@@ -2,78 +2,85 @@
   {
     "objectID": "research.html",
     "href": "research.html",
-    "title": "Research & Publications",
+    "title": "Research",
     "section": "",
-    "text": "Dissertation / research focus: [Title or short description of your PhD work.]\n[Describe your research program in a paragraph. Explain the problem, methods, and significance in language understandable to someone outside your immediate subfield.]\n\n\n\n[Author(s)], [Year]. [Paper title.] [Journal / conference]. [DOI / link]\n[Add papers, preprints, conference proceedings, posters, or presentations.]\n\n\n\n\n\n[Contribution, method, or finding]\n[Contribution, method, or finding]\n[Contribution, method, or finding]"
+    "text": "Pennsylvania State University — Mechanical Engineering\nPh.D. | August 2026\n\n\nMy dissertation research used predictive walking simulations to investigate how torque capability limitations can contribute to gait changes associated with post-stroke walking.\n\n\nDeveloped additional capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations, including improvements to foot-ground interactions, impacts, walking mechanics, and optimization frameworks.\n\n\n\n\nHow do unilateral torque capability limitations affect walking mechanics and gait asymmetry?\nHow do torque-rate limitations influence double-support time?\nWhat walking objectives and underlying mechanics may contribute to reduced step lengths, asymmetries, and increased double-support time beyond energetic cost?\n\n\n\n\nMATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics · Physics modeling\n\n\n\n\nAdd publications, conference presentations, posters, and links here as applicable."
   },
   {
-    "objectID": "research.html#publications",
-    "href": "research.html#publications",
-    "title": "Research & Publications",
+    "objectID": "research.html#using-2d-predictive-walking-simulations-to-investigate-post-stroke-gait-changes-with-reduced-torque-capabilities",
+    "href": "research.html#using-2d-predictive-walking-simulations-to-investigate-post-stroke-gait-changes-with-reduced-torque-capabilities",
+    "title": "Research",
     "section": "",
-    "text": "[Author(s)], [Year]. [Paper title.] [Journal / conference]. [DOI / link]\n[Add papers, preprints, conference proceedings, posters, or presentations.]"
+    "text": "My dissertation research used predictive walking simulations to investigate how torque capability limitations can contribute to gait changes associated with post-stroke walking.\n\n\nDeveloped additional capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations, including improvements to foot-ground interactions, impacts, walking mechanics, and optimization frameworks.\n\n\n\n\nHow do unilateral torque capability limitations affect walking mechanics and gait asymmetry?\nHow do torque-rate limitations influence double-support time?\nWhat walking objectives and underlying mechanics may contribute to reduced step lengths, asymmetries, and increased double-support time beyond energetic cost?\n\n\n\n\nMATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics · Physics modeling"
   },
   {
-    "objectID": "research.html#research-contributions",
-    "href": "research.html#research-contributions",
-    "title": "Research & Publications",
+    "objectID": "research.html#publications-presentations",
+    "href": "research.html#publications-presentations",
+    "title": "Research",
     "section": "",
-    "text": "[Contribution, method, or finding]\n[Contribution, method, or finding]\n[Contribution, method, or finding]"
+    "text": "Add publications, conference presentations, posters, and links here as applicable."
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Nicholas Yaple",
     "section": "",
-    "text": "Welcome to my portfolio. I am a [your role / PhD field] focused on [research area or technical focus]. I build, investigate, and develop [methods / systems / technologies] to address [the problems you care about].\n\nDownload Resume GitHub Contact\n\n\n\n\n\nProblem: [Briefly describe the challenge.]\nContribution: [What you personally developed, designed, analyzed, or demonstrated.]\nResult: [Highlight a result, metric, publication, or impact.]\nExplore project →\n\n\n\n[Two sentences describing an independent project, technical contribution, and outcome.]\nExplore project →\n\n\n\n\n\nResearch: [Topic 1] · [Topic 2] · [Topic 3]\nTechnical skills: [Languages] · [Frameworks] · [Tools]\nMethods: [Methods, experimental techniques, modeling, etc.]\n\n\n\n\n[Write a concise 3–5 sentence professional biography. Focus on your research and technical background, the problems you work on, and the kind of opportunities you are pursuing.]\nSee research and publications for additional details.\n\nThis website is a work in progress."
+    "text": "I am a mechanical engineer with a Ph.D. background in predictive simulation, optimization, and robotic control. My work spans physics-based modeling, control systems, MATLAB/Simulink, Python, and robotics—connecting computational methods with engineering systems and experimental results.\n\nDownload Resume GitHub Contact\n\n\n\n\n\nDeveloped capabilities for a 2D lower-body skeletal model using hybrid zero-dynamics-based control and predictive optimization to investigate walking mechanics, torque limitations, and post-stroke gait changes.\nFocus: Dynamics and physics modeling · MATLAB · Optimization · Robotic control\nResearch details →\n\n\n\nDeveloping a camera-based teleoperation system mapping human arm position to a robotic arm, integrating Python computer vision, pose detection, ROS 2, and robot control.\nFocus: Robotics integration · Python · Computer vision · ROS 2\nProject details →\n\n\n\nBuilding disc-flight simulations and an instrumented data-collection device using IMUs, with experimentally collected data used to validate simulation behavior.\nFocus: Physics simulation · Python · Instrumentation · Experimental validation\nProject details →\n\n\n\n\nContract Engineer — Wabtec\nOctober 2026–Present\nConverting, optimizing, and testing control systems from legacy software into MATLAB/Simulink-based implementations.\n\n\n\n\nSimulation & modeling: predictive simulation, physics modeling, trajectory optimization, gait simulation\nControls: robotic control, hybrid zero dynamics, control-system conversion and testing\nSoftware: MATLAB, Simulink, Python\nRobotics & integration: ROS 2, computer vision, microcontrollers, mechatronics\nEngineering: biomechanics, solid mechanics, instrumentation, experimental analysis\n\n\n\n\nMy interests center on simulation and control of dynamic systems, robotics, modeling, optimization, and translating engineering concepts into working implementations. I enjoy problems that connect software, physics, hardware, and measurable system performance."
   },
   {
-    "objectID": "index.html#featured-work",
-    "href": "index.html#featured-work",
+    "objectID": "index.html#selected-projects",
+    "href": "index.html#selected-projects",
     "title": "Nicholas Yaple",
     "section": "",
-    "text": "Problem: [Briefly describe the challenge.]\nContribution: [What you personally developed, designed, analyzed, or demonstrated.]\nResult: [Highlight a result, metric, publication, or impact.]\nExplore project →\n\n\n\n[Two sentences describing an independent project, technical contribution, and outcome.]\nExplore project →"
+    "text": "Developed capabilities for a 2D lower-body skeletal model using hybrid zero-dynamics-based control and predictive optimization to investigate walking mechanics, torque limitations, and post-stroke gait changes.\nFocus: Dynamics and physics modeling · MATLAB · Optimization · Robotic control\nResearch details →\n\n\n\nDeveloping a camera-based teleoperation system mapping human arm position to a robotic arm, integrating Python computer vision, pose detection, ROS 2, and robot control.\nFocus: Robotics integration · Python · Computer vision · ROS 2\nProject details →\n\n\n\nBuilding disc-flight simulations and an instrumented data-collection device using IMUs, with experimentally collected data used to validate simulation behavior.\nFocus: Physics simulation · Python · Instrumentation · Experimental validation\nProject details →"
   },
   {
-    "objectID": "index.html#research-expertise",
-    "href": "index.html#research-expertise",
+    "objectID": "index.html#current-engineering-work",
+    "href": "index.html#current-engineering-work",
     "title": "Nicholas Yaple",
     "section": "",
-    "text": "Research: [Topic 1] · [Topic 2] · [Topic 3]\nTechnical skills: [Languages] · [Frameworks] · [Tools]\nMethods: [Methods, experimental techniques, modeling, etc.]"
+    "text": "Contract Engineer — Wabtec\nOctober 2026–Present\nConverting, optimizing, and testing control systems from legacy software into MATLAB/Simulink-based implementations."
+  },
+  {
+    "objectID": "index.html#technical-areas",
+    "href": "index.html#technical-areas",
+    "title": "Nicholas Yaple",
+    "section": "",
+    "text": "Simulation & modeling: predictive simulation, physics modeling, trajectory optimization, gait simulation\nControls: robotic control, hybrid zero dynamics, control-system conversion and testing\nSoftware: MATLAB, Simulink, Python\nRobotics & integration: ROS 2, computer vision, microcontrollers, mechatronics\nEngineering: biomechanics, solid mechanics, instrumentation, experimental analysis"
   },
   {
     "objectID": "index.html#about",
     "href": "index.html#about",
     "title": "Nicholas Yaple",
     "section": "",
-    "text": "[Write a concise 3–5 sentence professional biography. Focus on your research and technical background, the problems you work on, and the kind of opportunities you are pursuing.]\nSee research and publications for additional details.\n\nThis website is a work in progress."
+    "text": "My interests center on simulation and control of dynamic systems, robotics, modeling, optimization, and translating engineering concepts into working implementations. I enjoy problems that connect software, physics, hardware, and measurable system performance."
   },
   {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Use these pages/cards to showcase the projects most relevant to the roles you are applying for. Focus on your own contributions and evidence of results.\n\n\n\nProblem: [What needed to be solved?]\nMy contribution: [What did you do?]\nTools: [Tools, languages, hardware, methods]\nOutcome: [Results, metrics, demonstrated impact]\n\nLinks: Code · Paper / report · Demo / figures\n\n\n\n\nProblem: [Challenge]\nMy contribution: [Contribution]\nTools: [Technologies]\nOutcome: [Result]\n\nLinks: Code · Report\n\n\n\n\nProblem: [Challenge]\nMy contribution: [Contribution]\nTools: [Technologies]\nOutcome: [Result]\n\nLinks: Code · Report"
+    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning\nAdd a system diagram, video, GIF, or demonstration image here.\n\n\n\n\n2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation\nAdd simulation plots, device photographs, and comparison of simulation with measured data here.\n\n\n\n\nPh.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics Research details →"
   },
   {
-    "objectID": "projects.html#project-1-name",
-    "href": "projects.html#project-1-name",
+    "objectID": "projects.html#robotic-arm-teleoperation-with-vision",
+    "href": "projects.html#robotic-arm-teleoperation-with-vision",
     "title": "Projects",
     "section": "",
-    "text": "Problem: [What needed to be solved?]\nMy contribution: [What did you do?]\nTools: [Tools, languages, hardware, methods]\nOutcome: [Results, metrics, demonstrated impact]\n\nLinks: Code · Paper / report · Demo / figures"
+    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning\nAdd a system diagram, video, GIF, or demonstration image here."
   },
   {
-    "objectID": "projects.html#project-2-name",
-    "href": "projects.html#project-2-name",
+    "objectID": "projects.html#disc-flight-simulation-instrumented-data-collection",
+    "href": "projects.html#disc-flight-simulation-instrumented-data-collection",
     "title": "Projects",
     "section": "",
-    "text": "Problem: [Challenge]\nMy contribution: [Contribution]\nTools: [Technologies]\nOutcome: [Result]\n\nLinks: Code · Report"
+    "text": "2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation\nAdd simulation plots, device photographs, and comparison of simulation with measured data here."
   },
   {
-    "objectID": "projects.html#project-3-name",
-    "href": "projects.html#project-3-name",
+    "objectID": "projects.html#predictive-walking-simulation-control",
+    "href": "projects.html#predictive-walking-simulation-control",
     "title": "Projects",
     "section": "",
-    "text": "Problem: [Challenge]\nMy contribution: [Contribution]\nTools: [Technologies]\nOutcome: [Result]\n\nLinks: Code · Report"
+    "text": "Ph.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics Research details →"
   }
 ]
