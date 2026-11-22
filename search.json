@@ -1,0 +1,79 @@
+[
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "Research & Publications",
+    "section": "",
+    "text": "Dissertation / research focus: [Title or short description of your PhD work.]\n[Describe your research program in a paragraph. Explain the problem, methods, and significance in language understandable to someone outside your immediate subfield.]\n\n\n\n[Author(s)], [Year]. [Paper title.] [Journal / conference]. [DOI / link]\n[Add papers, preprints, conference proceedings, posters, or presentations.]\n\n\n\n\n\n[Contribution, method, or finding]\n[Contribution, method, or finding]\n[Contribution, method, or finding]"
+  },
+  {
+    "objectID": "research.html#publications",
+    "href": "research.html#publications",
+    "title": "Research & Publications",
+    "section": "",
+    "text": "[Author(s)], [Year]. [Paper title.] [Journal / conference]. [DOI / link]\n[Add papers, preprints, conference proceedings, posters, or presentations.]"
+  },
+  {
+    "objectID": "research.html#research-contributions",
+    "href": "research.html#research-contributions",
+    "title": "Research & Publications",
+    "section": "",
+    "text": "[Contribution, method, or finding]\n[Contribution, method, or finding]\n[Contribution, method, or finding]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Nicholas Yaple",
+    "section": "",
+    "text": "Welcome to my portfolio. I am a [your role / PhD field] focused on [research area or technical focus]. I build, investigate, and develop [methods / systems / technologies] to address [the problems you care about].\n\nDownload Resume GitHub Contact\n\n\n\n\n\nProblem: [Briefly describe the challenge.]\nContribution: [What you personally developed, designed, analyzed, or demonstrated.]\nResult: [Highlight a result, metric, publication, or impact.]\nExplore project →\n\n\n\n[Two sentences describing an independent project, technical contribution, and outcome.]\nExplore project →\n\n\n\n\n\nResearch: [Topic 1] · [Topic 2] · [Topic 3]\nTechnical skills: [Languages] · [Frameworks] · [Tools]\nMethods: [Methods, experimental techniques, modeling, etc.]\n\n\n\n\n[Write a concise 3–5 sentence professional biography. Focus on your research and technical background, the problems you work on, and the kind of opportunities you are pursuing.]\nSee research and publications for additional details.\n\nThis website is a work in progress."
+  },
+  {
+    "objectID": "index.html#featured-work",
+    "href": "index.html#featured-work",
+    "title": "Nicholas Yaple",
+    "section": "",
+    "text": "Problem: [Briefly describe the challenge.]\nContribution: [What you personally developed, designed, analyzed, or demonstrated.]\nResult: [Highlight a result, metric, publication, or impact.]\nExplore project →\n\n\n\n[Two sentences describing an independent project, technical contribution, and outcome.]\nExplore project →"
+  },
+  {
+    "objectID": "index.html#research-expertise",
+    "href": "index.html#research-expertise",
+    "title": "Nicholas Yaple",
+    "section": "",
+    "text": "Research: [Topic 1] · [Topic 2] · [Topic 3]\nTechnical skills: [Languages] · [Frameworks] · [Tools]\nMethods: [Methods, experimental techniques, modeling, etc.]"
+  },
+  {
+    "objectID": "index.html#about",
+    "href": "index.html#about",
+    "title": "Nicholas Yaple",
+    "section": "",
+    "text": "[Write a concise 3–5 sentence professional biography. Focus on your research and technical background, the problems you work on, and the kind of opportunities you are pursuing.]\nSee research and publications for additional details.\n\nThis website is a work in progress."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Use these pages/cards to showcase the projects most relevant to the roles you are applying for. Focus on your own contributions and evidence of results.\n\n\n\nProblem: [What needed to be solved?]\nMy contribution: [What did you do?]\nTools: [Tools, languages, hardware, methods]\nOutcome: [Results, metrics, demonstrated impact]\n\nLinks: Code · Paper / report · Demo / figures\n\n\n\n\nProblem: [Challenge]\nMy contribution: [Contribution]\nTools: [Technologies]\nOutcome: [Result]\n\nLinks: Code · Report\n\n\n\n\nProblem: [Challenge]\nMy contribution: [Contribution]\nTools: [Technologies]\nOutcome: [Result]\n\nLinks: Code · Report"
+  },
+  {
+    "objectID": "projects.html#project-1-name",
+    "href": "projects.html#project-1-name",
+    "title": "Projects",
+    "section": "",
+    "text": "Problem: [What needed to be solved?]\nMy contribution: [What did you do?]\nTools: [Tools, languages, hardware, methods]\nOutcome: [Results, metrics, demonstrated impact]\n\nLinks: Code · Paper / report · Demo / figures"
+  },
+  {
+    "objectID": "projects.html#project-2-name",
+    "href": "projects.html#project-2-name",
+    "title": "Projects",
+    "section": "",
+    "text": "Problem: [Challenge]\nMy contribution: [Contribution]\nTools: [Technologies]\nOutcome: [Result]\n\nLinks: Code · Report"
+  },
+  {
+    "objectID": "projects.html#project-3-name",
+    "href": "projects.html#project-3-name",
+    "title": "Projects",
+    "section": "",
+    "text": "Problem: [Challenge]\nMy contribution: [Contribution]\nTools: [Technologies]\nOutcome: [Result]\n\nLinks: Code · Report"
+  }
+]
