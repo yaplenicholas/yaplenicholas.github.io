@@ -53,16 +53,17 @@ Building disc-flight simulations and an instrumented data-collection device usin
 
 ## Current engineering work
 
-**Control Engineer II (Contract) — Wabtec**  
+**Control Engineer II (Contract via Bentley Resources) — Wabtec, Erie, PA**  
 *October 2026–Present*
 
-Converting legacy control software into optimized MATLAB/Simulink implementations, and validating the converted controllers from simulation to real-world operation (sim-to-real).
+Converting legacy control software into optimized MATLAB/Simulink implementations and testing the converted controllers in simulation against legacy behavior, ahead of real-world (sim-to-real) validation.
 
 ## Technical areas
 - **Simulation & modeling:** predictive simulation, physics modeling, trajectory optimization, gait simulation
 - **Controls:** robotic control, hybrid zero dynamics, control-system conversion and testing
 - **Software:** MATLAB, Simulink, Python
 - **Robotics & integration:** ROS 2, computer vision, microcontrollers, mechatronics
+- **Currently developing:** MuJoCo, NVIDIA Isaac Sim, MJCF robot modeling, ROS 2 simulation workflows
 - **Engineering:** biomechanics, solid mechanics, instrumentation, experimental analysis
 
 ## About
