@@ -46,7 +46,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-48eea8e06ff06eb442a2daacfce5ac08.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -78,6 +81,13 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Nicholas Yaple">
+<meta property="og:description" content="Mechanical engineer: robotics simulation, controls, predictive gait simulation, and optimization.">
+<meta property="og:image" content="https://yaplenicholas.github.io/research/figs/biped.png">
+<meta property="og:site_name" content="Nicholas Yaple">
+<meta property="og:image:alt" content="Six-link planar biped model diagram">
+<meta property="og:image:height" content="1449">
+<meta property="og:image:width" content="1600">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -104,19 +114,38 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="./research.html">
+ <span class="dropdown-text">Ph.D.&nbsp;research overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/dissertation/Yaple_Dissertation_2026.pdf">
+ <span class="dropdown-text">Dissertation (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/yaplenicholas/DSR">
+ <span class="dropdown-text">DSR simulation code (MATLAB)</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./research.html"> 
-<span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./resume.pdf"> 
+<span class="menu-text">Resume</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/yaplenicholas"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/yaplenicholas"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="mailto:yaplenicholas@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="Email">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -163,12 +192,23 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <section id="selected-projects" class="level2">
 <h2 class="anchored" data-anchor-id="selected-projects">Selected projects</h2>
-<section id="predictive-walking-simulation-control" class="level3 project-card">
+<div class="project-card project-card-featured">
+<div class="columns">
+<div class="column" style="width:68%;">
+<p><span class="finding-label">Ph.D.&nbsp;Dissertation · Penn State · 2026</span></p>
+<section id="predictive-walking-simulation-control" class="level3">
 <h3 class="anchored" data-anchor-id="predictive-walking-simulation-control">Predictive Walking Simulation &amp; Control</h3>
-<p>Developed capabilities for a 2D lower-body skeletal model using hybrid zero-dynamics-based control and predictive optimization to investigate walking mechanics, torque limitations, and post-stroke gait changes.</p>
+<p>Built a 2D lower-body skeletal walking model with hybrid-zero-dynamics control and gait optimization. I used it to test whether unilateral weakness, slower torque development, or altered walking objectives could explain post-stroke gait changes.</p>
 <p><strong>Focus:</strong> Dynamics and physics modeling · MATLAB · Optimization · Robotic control</p>
-<p><a href="./research.html">Research details →</a></p>
+<p><a href="./research.html">Research details →</a> · <a href="research/dissertation/Yaple_Dissertation_2026.pdf">Dissertation (PDF)</a></p>
 </section>
+</div><div class="column" style="width:4%;">
+
+</div><div class="column" style="width:28%;">
+<p><a href="research/figs/biped.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="research/figs/biped.png" class="card-thumb img-fluid" alt="Six-link planar biped model diagram"></a></p>
+</div>
+</div>
+</div>
 <section id="robotic-arm-teleoperation" class="level3 project-card">
 <h3 class="anchored" data-anchor-id="robotic-arm-teleoperation">Robotic Arm Teleoperation</h3>
 <p>Developing a camera-based teleoperation system mapping human arm position to a robotic arm, integrating Python computer vision, pose detection, ROS 2, and robot control.</p>
@@ -280,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/yaplenicholas\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/yaplenicholas\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -693,10 +733,42 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

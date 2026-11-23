@@ -2,8 +2,36 @@
 .navbar { border-bottom: 1px solid rgba(128,128,128,.18); }
 h1, h2, h3 { letter-spacing: -0.025em; }
 h1 { font-weight: 700; }
-.hero-buttons { margin: 1.25rem 0 2rem; display: flex; flex-wrap: wrap; gap: .6rem; }
-.project-card { padding: 1.1rem 1.35rem; margin: 1rem 0 1.3rem; border: 1px solid rgba(128,128,128,.3); border-radius: .8rem; }
-.project-card h3 { margin-top: .1rem; }
-.project-card p:last-child { margin-bottom: .1rem; }
+h2 { margin-top: 2.2rem; }
 a { text-underline-offset: .18em; }
+
+.hero-buttons { margin: 1.25rem 0 2rem; display: flex; flex-wrap: wrap; gap: .6rem; }
+.hero-buttons .bi { margin-right: .3rem; }
+
+/* Project cards */
+.project-card { padding: 1.1rem 1.35rem; margin: 1rem 0 1.3rem; border: 1px solid rgba(128,128,128,.3); border-radius: .8rem; }
+.project-card h3, .project-card h4 { margin-top: .1rem; }
+.project-card p:last-child { margin-bottom: .1rem; }
+.project-card-featured { border-color: rgba(39,128,227,.45); box-shadow: 0 1px 10px rgba(39,128,227,.08); }
+.project-card .card-thumb, .project-card img { max-height: 210px; width: auto; display: block; margin: 0 auto; }
+.project-card figure { margin: 0; }
+
+/* Research page */
+.quarto-title .subtitle { font-size: 1.2rem; line-height: 1.4; opacity: .85; }
+.research-meta { color: #555; font-size: .95rem; margin-bottom: .5rem; }
+
+.findings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; margin: 1.25rem 0 1.5rem; }
+.finding-card { border: 1px solid rgba(128,128,128,.28); border-top: 4px solid #2780e3; border-radius: .6rem; padding: .9rem 1.1rem; font-size: .94rem; }
+.finding-card h4 { margin: .25rem 0 .5rem; font-size: 1.1rem; }
+.finding-card p:last-child { margin-bottom: 0; }
+.finding-label { display: inline-block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: #2780e3; }
+
+/* Figures */
+.quarto-figure img, figure img { border-radius: .35rem; }
+figcaption, .figure-caption { font-size: .88rem; color: #555; }
+.figure-secondary img { max-width: 85%; }
+main hr { margin: 2.5rem 0; opacity: .15; }
+
+@media (max-width: 767px) {
+  .project-card .column { width: 100% !important; }
+}

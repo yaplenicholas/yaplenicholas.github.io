@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Research – Nicholas Yaple</title>
+<title>Ph.D.&nbsp;Research – Nicholas Yaple</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -25,6 +25,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -46,7 +81,10 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-48eea8e06ff06eb442a2daacfce5ac08.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-cb61c712ca1a7fe70a83faed8e4da2d7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,11 +114,46 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="styles.css">
+<meta property="og:title" content="Ph.D.&nbsp;Research – Nicholas Yaple">
+<meta property="og:description" content="Ph.D.&nbsp;dissertation of Nicholas Yaple (Penn State Mechanical Engineering, 2026): predictive walking simulations of post-stroke gait using a hybrid-zero-dynamics skeletal model.">
+<meta property="og:image" content="https://yaplenicholas.github.io/research/figs/biped.png">
+<meta property="og:site_name" content="Nicholas Yaple">
+<meta property="og:image:height" content="1449">
+<meta property="og:image:width" content="1600">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
+<body class="nav-fixed quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -104,19 +177,38 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-research" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Research</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-research">    
+        <li>
+    <a class="dropdown-item" href="./research.html">
+ <span class="dropdown-text">Ph.D.&nbsp;research overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="./research/dissertation/Yaple_Dissertation_2026.pdf">
+ <span class="dropdown-text">Dissertation (PDF)</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="https://github.com/yaplenicholas/DSR">
+ <span class="dropdown-text">DSR simulation code (MATLAB)</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link active" href="./research.html" aria-current="page"> 
-<span class="menu-text">Research</span></a>
+    <a class="nav-link" href="./resume.pdf"> 
+<span class="menu-text">Resume</span></a>
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com/yaplenicholas"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com/yaplenicholas"> <i class="bi bi-github" role="img" aria-label="GitHub">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://www.linkedin.com/"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="mailto:yaplenicholas@gmail.com"> <i class="bi bi-envelope" role="img" aria-label="Email">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -132,13 +224,32 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" aria-labelledby="toc-title" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link" data-scroll-target="#abstract">Abstract</a></li>
+  <li><a href="#the-model-and-simulation-framework" id="toc-the-model-and-simulation-framework" class="nav-link" data-scroll-target="#the-model-and-simulation-framework">The model and simulation framework</a></li>
+  <li><a href="#chapter-2-unilateral-weakness-and-spatiotemporal-asymmetry" id="toc-chapter-2-unilateral-weakness-and-spatiotemporal-asymmetry" class="nav-link" data-scroll-target="#chapter-2-unilateral-weakness-and-spatiotemporal-asymmetry">Chapter 2: Unilateral weakness and spatiotemporal asymmetry</a></li>
+  <li><a href="#chapter-3-reduced-rate-of-torque-development-and-double-support-time" id="toc-chapter-3-reduced-rate-of-torque-development-and-double-support-time" class="nav-link" data-scroll-target="#chapter-3-reduced-rate-of-torque-development-and-double-support-time">Chapter 3: Reduced rate of torque development and double-support time</a></li>
+  <li><a href="#chapter-4-altered-walking-objectives" id="toc-chapter-4-altered-walking-objectives" class="nav-link" data-scroll-target="#chapter-4-altered-walking-objectives">Chapter 4: Altered walking objectives</a></li>
+  <li><a href="#conclusions-and-future-work" id="toc-conclusions-and-future-work" class="nav-link" data-scroll-target="#conclusions-and-future-work">Conclusions and future work</a></li>
+  <li><a href="#code-and-reproducibility" id="toc-code-and-reproducibility" class="nav-link" data-scroll-target="#code-and-reproducibility">Code and reproducibility</a></li>
+  <li><a href="#publications-and-presentations" id="toc-publications-and-presentations" class="nav-link" data-scroll-target="#publications-and-presentations">Publications and presentations</a></li>
+  <li><a href="#cite-this-work" id="toc-cite-this-work" class="nav-link" data-scroll-target="#cite-this-work">Cite this work</a></li>
+  <li><a href="#acknowledgments" id="toc-acknowledgments" class="nav-link" data-scroll-target="#acknowledgments">Acknowledgments</a></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content" tabindex="-1">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Research</h1>
+<h1 class="title">Ph.D.&nbsp;Research</h1>
+<p class="subtitle lead">Using 2D Predictive Walking Simulations to Investigate Post-stroke Gait Changes with Reduced Torque Capabilities</p>
 </div>
 
 
@@ -155,36 +266,301 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="ph.d.-research" class="level1">
-<h1>Ph.D.&nbsp;Research</h1>
-<p><strong>Pennsylvania State University — Mechanical Engineering</strong><br>
-<em>Ph.D.&nbsp;| August 2026</em></p>
-<section id="using-2d-predictive-walking-simulations-to-investigate-post-stroke-gait-changes-with-reduced-torque-capabilities" class="level2">
-<h2 class="anchored" data-anchor-id="using-2d-predictive-walking-simulations-to-investigate-post-stroke-gait-changes-with-reduced-torque-capabilities">Using 2D Predictive Walking Simulations to Investigate Post-stroke Gait Changes with Reduced Torque Capabilities</h2>
-<p>My dissertation research used predictive walking simulations to investigate how torque capability limitations can contribute to gait changes associated with post-stroke walking.</p>
-<section id="modeling-and-simulation" class="level3">
-<h3 class="anchored" data-anchor-id="modeling-and-simulation">Modeling and simulation</h3>
-<p>Developed additional capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations, including improvements to foot-ground interactions, impacts, walking mechanics, and optimization frameworks.</p>
+<div class="research-meta">
+<p><strong>Nicholas Yaple</strong> · Ph.D., Mechanical Engineering · The Pennsylvania State University · August 2026 Advisor: Anne E. Martin, Ph.D.&nbsp;· Gait Optimization (GO) Lab</p>
+</div>
+<div class="hero-buttons">
+<p><a class="btn btn-primary" href="research/dissertation/Yaple_Dissertation_2026.pdf"><i class="bi bi-file-earmark-pdf"></i> Read the dissertation (PDF)</a> <a class="btn btn-outline-primary" href="#code-and-reproducibility"><i class="bi bi-code-slash"></i> MATLAB code</a> <a class="btn btn-outline-primary" href="#cite-this-work"><i class="bi bi-quote"></i> Cite</a></p>
+</div>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>People with post-stroke hemiparesis typically walk more slowly, more asymmetrically, and at a higher metabolic cost than people without a stroke. It is not well understood whether these changes come from <strong>physical impairments</strong> (such as weakness) or from <strong>changes in what a person is trying to optimize</strong> while walking. Both are difficult to isolate in experiments, and falls are a real risk for this population. Predictive simulation makes it possible to test each factor on its own.</p>
+<p>I developed a 2D lower-body skeletal model that can walk asymmetrically, controlled with hybrid-zero-dynamics (HZD)-based control and driven by gait optimization. I then used it to answer three questions:</p>
+<div class="findings-grid">
+<div class="finding-card">
+<p><span class="finding-label">Chapter 2</span></p>
+<section id="unilateral-weakness" class="level4">
+<h4 class="anchored" data-anchor-id="unilateral-weakness">Unilateral weakness</h4>
+<p>Does limiting joint torque on one side create step asymmetry?</p>
+<p><strong>Mostly no.</strong> Asymmetry stayed small: the largest was 10% step-time asymmetry, compared with 40–80% reported clinically. Instead, step length and time shortened by about 10–15% on both sides, and energetic cost rose.</p>
 </section>
-<section id="research-questions" class="level3">
-<h3 class="anchored" data-anchor-id="research-questions">Research questions</h3>
+</div>
+<div class="finding-card">
+<p><span class="finding-label">Chapter 3</span></p>
+<section id="torque-rate-limits" class="level4">
+<h4 class="anchored" data-anchor-id="torque-rate-limits">Torque-rate limits</h4>
+<p>Does a slower rate of torque development lengthen double support?</p>
+<p><strong>Yes, especially when walking slowly.</strong> Lower torque-rate limits increased double-support time, most at 0.4 m/s, and raised energetic cost. Step length and time stayed nearly unchanged.</p>
+</section>
+</div>
+<div class="finding-card">
+<p><span class="finding-label">Chapter 4</span></p>
+<section id="altered-walking-objectives" class="level4">
+<h4 class="anchored" data-anchor-id="altered-walking-objectives">Altered walking objectives</h4>
+<p>Can walking goals other than energy explain post-stroke features?</p>
+<p><strong>Partly.</strong> Adding asymmetric effort, torque-rate, or GRF-rate terms shortened steps. The GRF-derivative term also reduced peak knee flexion and smoothed and lowered GRFs, which are features of post-stroke gait.</p>
+</section>
+</div>
+</div>
+<p><strong>The common thread:</strong> in all three studies, near-symmetric gait remained optimal. No single impairment or objective reproduced clinical-scale asymmetry. This suggests that the large asymmetries seen after stroke likely come from several factors combining. A consistent shift toward shorter, quicker steps supports the slower preferred walking speeds observed after stroke.</p>
+</section>
+<section id="abstract" class="level2">
+<h2 class="anchored" data-anchor-id="abstract">Abstract</h2>
+<div class="callout callout-style-simple callout-note no-icon callout-titled">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Read the full abstract
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-1" class="callout-1-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>People post-stroke often have chronic impairments such as hemiparesis, defined as weakness or reduced mobility in one half of the body. Consequently, they walk with slower preferred speeds, asymmetric gait, and increased metabolic cost. However, the underlying factors causing the asymmetry are not well understood. It is unclear whether the gait changes are driven by physical impairments or non-physical attributes, such as changing walking objectives. Usually, people walk in a way that is energetically efficient. However, energetic cost alone does not explain gait preferences post-stroke. Since it is difficult to perform physical experimental studies to quantify impairments and walking objectives, predictive simulations are advantageous for investigating how people self-select their gait post-stroke. However, few predictive simulations have been utilized to investigate these gait adaptations; of those that have, the primary focus has remained on muscle weakness.</p>
+<p>Using a 2D predictive walking model, this work investigated how spatiotemporal asymmetry develops with joint-level unilateral weakness. During gait optimization, the joint torques were clipped to a percentage of the baseline gait (without weakness). The findings indicated that step asymmetries were small, but step length and time decreased bilaterally. However, the double support (DS) time in simulations remained very low and torque rates were high. Therefore, this work then investigated the rate of torque development (RTD), which may also contribute to spatiotemporal disturbances post-stroke, such as increased time spent in DS. Torque rate limits were applied during gait optimization, clipping the model’s torque rates and reduced until optimization failure. The results suggest that decreased torque rates increase DS times, particularly at lower speeds.</p>
+<p>To investigate gait changes as result of potential objective function changes and compare to the results of torque and torque rate limitations, we introduced three additional objective function terms in addition to energetic cost (EC): asymmetric EC (<span class="math inline">\(J_{AEC}\)</span>) for its effects on increasing step asymmetries, torque rate (<span class="math inline">\(J_{TR}\)</span>) for its effects on increasing DS time, and ground reaction force (GRF) derivative (<span class="math inline">\(J_{dF}\)</span>) for its effects on step asymmetries and GRF reductions. Optimal gaits reveal asymmetry for all terms were small, step lengths and times decreased, and <span class="math inline">\(J_{AEC}\)</span> and <span class="math inline">\(J_{dF}\)</span> terms reduced peak knee flexion.</p>
+<p>Overall, using torque capability limitations, we investigated how directly restricting torques changes gait; using additional objective function terms, we investigated how a preference for reduced torque and GRF reductions changes gait. These findings indicated that near symmetry is typically optimal and torque capability limits yielded similar results as their objective function equivalents. The tendency toward decreased step length and time may support slower preferred walking speeds post-stroke and may support including <span class="math inline">\(J_{dF}\)</span> in healthy walking to improve GRF interactions.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="the-model-and-simulation-framework" class="level2">
+<h2 class="anchored" data-anchor-id="the-model-and-simulation-framework">The model and simulation framework</h2>
+<p>Existing HZD skeletal walking models had point feet, treated double support as instantaneous, or assumed one-step symmetric gait. None of these assumptions holds for post-stroke walking, where double support can exceed 50% of the gait cycle. I merged two earlier models from our lab and extended them into a framework that can walk asymmetrically with finite double support.</p>
+<div class="columns">
+<div class="column" style="width:45%;">
+<div id="fig-biped" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagram of six-link planar biped with labeled joint angles q1 through q6 and curved feet on hatched ground.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-biped-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="research/figs/biped.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Figure&nbsp;1: Six-link planar biped. q_1 is the unactuated stance-thigh angle; hip, knee, and ankle joints q_2–q_6 are driven by ideal torque motors. Curved feet roll on a compliant ground."><img src="research/figs/biped.png" class="img-fluid figure-img" alt="Diagram of six-link planar biped with labeled joint angles q1 through q6 and curved feet on hatched ground."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-biped-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Six-link planar biped. <span class="math inline">\(q_1\)</span> is the unactuated stance-thigh angle; hip, knee, and ankle joints <span class="math inline">\(q_2\)</span>–<span class="math inline">\(q_6\)</span> are driven by ideal torque motors. Curved feet roll on a compliant ground.
+</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:5%;">
+
+</div><div class="column" style="width:50%;">
+<p><strong>Model</strong></p>
 <ul>
-<li>How do unilateral torque capability limitations affect walking mechanics and gait asymmetry?</li>
-<li>How do torque-rate limitations influence double-support time?</li>
-<li>What walking objectives and underlying mechanics may contribute to reduced step lengths, asymmetries, and increased double-support time beyond energetic cost?</li>
+<li>Six-link sagittal-plane lower body (hip, two thighs, shanks, and curved feet)</li>
+<li>Scaled to an average adult: 0.9 m leg length, 87 kg</li>
+<li>HZD-based control: joints track Bézier-polynomial trajectories within each phase</li>
+</ul>
+<p><strong>Key extensions I developed</strong></p>
+<ul>
+<li><strong>Two-step periodic gait.</strong> The stride is split into four phases (affected DS → affected SS → unaffected DS → unaffected SS), which allows left-right asymmetry.</li>
+<li><strong>Finite double support</strong>, with C² (position, velocity, and acceleration) continuity enforced across every phase transition.</li>
+<li><strong>Compliant ground contact</strong> using nonlinear spring-dampers with a bristle-style friction formulation. This removed unrealistic GRF spikes and micro-oscillations at contact.</li>
+<li><strong>Adjustable inter-foot distance in DS</strong>, so the model better accommodates ground compliance.</li>
+<li><strong>A robust gait optimization routine</strong> with local and global perturbation loops. It found baseline gaits with <strong>more than 20% lower energetic cost</strong> than previously generated gaits.</li>
+</ul>
+</div>
+</div>
+<div id="fig-phases" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Stride diagram showing four phases: Affected DS, Affected SS, Unaffected DS, Unaffected SS, looping back.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-phases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="research/figs/gait-phases.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Figure&nbsp;2: One stride and the phase sequence used in the simulation. Every simulation starts at affected double support and ends after unaffected single support."><img src="research/figs/gait-phases.png" class="img-fluid figure-img" alt="Stride diagram showing four phases: Affected DS, Affected SS, Unaffected DS, Unaffected SS, looping back."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-phases-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: One stride and the phase sequence used in the simulation. Every simulation starts at affected double support and ends after unaffected single support.
+</figcaption>
+</figure>
+</div>
+<div id="fig-opt" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Flow chart: initial decision variables, then gait optimization inside local and global perturbation loops, then optimal gait.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-opt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="research/figs/optimization-routine.png" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="Figure&nbsp;3: The optimization routine. A local loop perturbs and re-optimizes the gait until improvement stalls. A global loop repeats this to escape the very shallow energetic landscape near the optimum."><img src="research/figs/optimization-routine.png" class="img-fluid figure-img" alt="Flow chart: initial decision variables, then gait optimization inside local and global perturbation loops, then optimal gait."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-opt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3: The optimization routine. A local loop perturbs and re-optimizes the gait until improvement stalls. A global loop repeats this to escape the very shallow energetic landscape near the optimum.
+</figcaption>
+</figure>
+</div>
+<p><strong>Tools:</strong> MATLAB · direct-shooting gait optimization (constrained nonlinear programming) · hybrid dynamical systems · Bézier-parameterized virtual constraints</p>
+<hr>
+</section>
+<section id="chapter-2-unilateral-weakness-and-spatiotemporal-asymmetry" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-2-unilateral-weakness-and-spatiotemporal-asymmetry">Chapter 2: Unilateral weakness and spatiotemporal asymmetry</h2>
+<p><strong>Question.</strong> Does joint-level weakness on one side of the body cause step-length and step-time asymmetry?</p>
+<p><strong>Approach.</strong> Hip, knee, and ankle torques on the affected side were clipped to a decreasing percentage of their baseline (healthy-gait) maximum. The gait was re-optimized for minimum energetic cost at each weakness level, at 1.2, 0.8, and 0.4 m/s, until optimization failed. The maximum weakness reached was 42% at 1.2 m/s, 32% at 0.8 m/s, and 38% at 0.4 m/s.</p>
+<div id="fig-ch2" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Six scatter plots of step length and step time versus weakness percent at three speeds, both decreasing with weakness.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="research/figs/ch2-step-length-time.png" class="lightbox" data-gallery="quarto-lightbox-gallery-4" title="Figure&nbsp;4: Step length (top) and step time (bottom) as weakness increased at 1.2, 0.8, and 0.4 m/s. Both shortened bilaterally. Asymmetry is visible mainly in the 1.2 m/s step times."><img src="research/figs/ch2-step-length-time.png" class="img-fluid figure-img" alt="Six scatter plots of step length and step time versus weakness percent at three speeds, both decreasing with weakness."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4: Step length (top) and step time (bottom) as weakness increased at 1.2, 0.8, and 0.4 m/s. Both shortened bilaterally. Asymmetry is visible mainly in the 1.2 m/s step times.
+</figcaption>
+</figure>
+</div>
+<p><strong>Findings</strong></p>
+<ul>
+<li>Step asymmetry stayed below 5% in nearly all cases. The maximum was <strong>10% step-time asymmetry</strong> at 1.2 m/s, far below the 40–80% observed experimentally and the ~30% reported in muscle-driven simulations.</li>
+<li>The dominant adaptation was <strong>bilateral shortening of steps (≈10–15%)</strong>, which is consistent with the shorter strides seen after stroke.</li>
+<li>Energetic cost rose with weakness: up to ~20% at 1.2 and 0.4 m/s, and ~60% at 0.8 m/s.</li>
+<li>Asymmetry <em>direction</em> depended on speed (positive at faster speeds, negative at 0.4 m/s). This points to a shallow energetic landscape where several gait strategies cost nearly the same.</li>
+</ul>
+<p><strong>Implication.</strong> Strength training alone may be insufficient to restore symmetric gait. Weakness is only one part of the post-stroke picture.</p>
+<hr>
+</section>
+<section id="chapter-3-reduced-rate-of-torque-development-and-double-support-time" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-3-reduced-rate-of-torque-development-and-double-support-time">Chapter 3: Reduced rate of torque development and double-support time</h2>
+<p><strong>Question.</strong> In Chapter 2, double support stayed at its 0.15 s lower bound, and torque rates spiked near phase transitions. Does limiting the <em>rate</em> of torque development lengthen double support, as seen after stroke?</p>
+<p><strong>Approach.</strong> Joint torque rates were clipped bilaterally to a scaling factor of the baseline rates. The factor was reduced step by step at 0.4, 0.6, and 0.8 m/s until optimization failed. The lowest feasible scaling factors were 1.55, 2.20, and 2.05×.</p>
+<div id="fig-ch3" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Three stacked scatter plots versus torque-rate scaling factor; DS time increases at 0.4 m/s while step length and time are flat.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="research/figs/ch3-ds-time.png" class="lightbox" data-gallery="quarto-lightbox-gallery-5" title="Figure&nbsp;5: Double-support time (A), step length (B), and step time (C) as the torque-rate limit was reduced. DS time rises clearly at 0.4 m/s, while step length and time stay almost unchanged."><img src="research/figs/ch3-ds-time.png" class="img-fluid figure-img" alt="Three stacked scatter plots versus torque-rate scaling factor; DS time increases at 0.4 m/s while step length and time are flat."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5: Double-support time (A), step length (B), and step time (C) as the torque-rate limit was reduced. DS time rises clearly at 0.4 m/s, while step length and time stay almost unchanged.
+</figcaption>
+</figure>
+</div>
+<p><strong>Findings</strong></p>
+<ul>
+<li><strong>Double-support time increased as torque-rate limits decreased</strong>, most strongly at 0.4 m/s. At every speed, DS time moved off its lower bound.</li>
+<li>Step length and step time stayed largely the same. The extra DS time came from spreading torque development over a longer window around phase transitions.</li>
+<li>Energetic cost increased significantly once the scaling factor fell below ~3–5×. This suggests the unconstrained model had been exploiting non-physiological, transient torque spikes.</li>
+<li>Lower torque-rate limits were reachable at slow speeds. This hints that reduced rate of torque development (RTD) may contribute to choosing slower walking speeds.</li>
+</ul>
+<p><strong>Implication.</strong> RTD, not just peak strength, may be a meaningful rehabilitation target, and realistic torque-rate limits may matter for predictive gait models in general.</p>
+<div id="fig-ch3b" class="figure-secondary quarto-float quarto-figure quarto-figure-center anchored" alt="Grid of torque-rate trajectories for hip, knee, ankle at three walking speeds with saturation at the limits.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch3b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="research/figs/ch3-torque-rate.png" class="lightbox" data-gallery="quarto-lightbox-gallery-6" title="Figure&nbsp;6: Hip, knee, and ankle torque rates across speeds as the limit was reduced."><img src="research/figs/ch3-torque-rate.png" class="figure-secondary img-fluid figure-img" alt="Grid of torque-rate trajectories for hip, knee, ankle at three walking speeds with saturation at the limits."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch3b-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6: Hip, knee, and ankle torque rates across speeds as the limit was reduced.
+</figcaption>
+</figure>
+</div>
+<hr>
+</section>
+<section id="chapter-4-altered-walking-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-4-altered-walking-objectives">Chapter 4: Altered walking objectives</h2>
+<p><strong>Question.</strong> Energetic cost alone does not explain post-stroke gait preferences. Could a change in <em>what is being minimized</em> produce post-stroke gait features, and how does that compare with the hard physical limits from Chapters 2 and 3?</p>
+<p><strong>Approach.</strong> Three candidate terms were added to the energetic-cost objective, each scaled and swept in weight <span class="math inline">\(w\)</span> at 0.4 and 0.8 m/s:</p>
+<table class="table-sm small caption-top table">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 33%">
+<col style="width: 33%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Represents</th>
+<th>Counterpart</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><span class="math inline">\(J_{AEC}\)</span>: asymmetric energetic cost</td>
+<td>Higher perceived effort on the affected side</td>
+<td>Unilateral weakness (Ch. 2)</td>
+</tr>
+<tr class="even">
+<td><span class="math inline">\(J_{TR}\)</span>: torque-rate squared</td>
+<td>Preference for slower torque development</td>
+<td>Torque-rate limits (Ch. 3)</td>
+</tr>
+<tr class="odd">
+<td><span class="math inline">\(J_{dF}\)</span>: GRF-derivative</td>
+<td>Preference for gentler ground loading</td>
+<td>(no physical counterpart)</td>
+</tr>
+</tbody>
+</table>
+<p>A regression analysis of combined objectives examined interaction effects between the terms.</p>
+<div id="fig-ch4" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Nine scatter plots: DS time, step length, step time versus objective weight for three objective terms at 0.4 m/s.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-ch4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<a href="research/figs/ch4-spatiotemporal-04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-7" title="Figure&nbsp;7: Spatiotemporal measures at 0.4 m/s as each objective weight increased. Left to right: J_{AEC}, J_{TR}, J_{dF}. Rows: DS time, step length, step time. Open markers show the affected side."><img src="research/figs/ch4-spatiotemporal-04.png" class="img-fluid figure-img" alt="Nine scatter plots: DS time, step length, step time versus objective weight for three objective terms at 0.4 m/s."></a>
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-ch4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7: Spatiotemporal measures at 0.4 m/s as each objective weight increased. Left to right: <span class="math inline">\(J_{AEC}\)</span>, <span class="math inline">\(J_{TR}\)</span>, <span class="math inline">\(J_{dF}\)</span>. Rows: DS time, step length, step time. Open markers show the affected side.
+</figcaption>
+</figure>
+</div>
+<p><strong>Findings</strong></p>
+<ul>
+<li>All three terms <strong>shortened step length and step time</strong>. <span class="math inline">\(J_{dF}\)</span> had the largest effect and was the strongest predictor in the combined-objective regression.</li>
+<li><span class="math inline">\(J_{AEC}\)</span> and <span class="math inline">\(J_{TR}\)</span> behaved much like their physical-limit counterparts. Torque-rate <em>limits</em> were more effective at lengthening DS than the torque-rate <em>objective</em>.</li>
+<li><span class="math inline">\(J_{AEC}\)</span> and especially <span class="math inline">\(J_{dF}\)</span> <strong>reduced peak knee flexion</strong>, a possible mechanism for stiff-knee gait. <span class="math inline">\(J_{dF}\)</span> also produced <strong>lower, more gradual GRFs</strong> that resemble post-stroke kinetics.</li>
+<li>Asymmetry remained small for every term, even when the objective itself was asymmetric.</li>
+<li>Interaction terms opposed the linear terms, which damped the overall step changes.</li>
+</ul>
+<p><strong>Implication.</strong> Altered walking objectives changed joint kinematics and GRFs more than torque limits alone did. Clinical assessment may need ways to measure a patient’s <em>walking goals</em>, not just their physical capacity. The GRF-derivative term may also improve foot-ground interaction in predictive models of healthy gait.</p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="research/figs/ch4-joint-angles-04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-8" title="Affected-side joint angles at 0.4 m/s."><img src="research/figs/ch4-joint-angles-04.png" class="img-fluid figure-img" alt="Grid of hip, knee, ankle joint angle trajectories under three objective terms."></a></p>
+<figcaption>Affected-side joint angles at 0.4 m/s.</figcaption>
+</figure>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="research/figs/ch4-grf-04.png" class="lightbox" data-gallery="quarto-lightbox-gallery-9" title="Affected-side ground reaction forces at 0.4 m/s."><img src="research/figs/ch4-grf-04.png" class="img-fluid figure-img" alt="Grid of vertical and horizontal GRF trajectories under three objective terms."></a></p>
+<figcaption>Affected-side ground reaction forces at 0.4 m/s.</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<hr>
+</section>
+<section id="conclusions-and-future-work" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions-and-future-work">Conclusions and future work</h2>
+<ul>
+<li><strong>Near symmetry is usually optimal.</strong> Clinical-scale asymmetry likely comes from several impairments and objective changes acting together, not any single factor.</li>
+<li><strong>Shorter, quicker steps</strong> emerged across nearly every condition, consistent with slower preferred walking speeds after stroke.</li>
+<li><strong>Torque-rate limits</strong> are a likely contributor to prolonged double support.</li>
+<li><strong>Walking objectives</strong> are a plausible driver of kinematic and kinetic changes such as reduced knee flexion and lower GRFs.</li>
+</ul>
+<p><strong>Next steps</strong> include: a unified controller with torque-rate continuity across phases; direct collocation for faster optimization; multivariate and personalized impairment models; stability and balance metrics inside the objective; 3D dynamics; and eventually machine-learning methods to identify the combination of impairments and objectives that best reproduces an individual’s gait.</p>
+</section>
+<section id="code-and-reproducibility" class="level2">
+<h2 class="anchored" data-anchor-id="code-and-reproducibility">Code and reproducibility</h2>
+<p>The simulation and optimization framework used throughout the dissertation is written in <strong>MATLAB</strong> and collected as <strong>DSR (Double Support Radius)</strong>.</p>
+<section id="dsr-2d-predictive-walking-simulation-matlab" class="level4 project-card">
+<h4 class="anchored" data-anchor-id="dsr-2d-predictive-walking-simulation-matlab">DSR: 2D predictive walking simulation (MATLAB)</h4>
+<p>Six-link HZD-controlled biped with finite double support, compliant ground contact, two-step periodic asymmetric gaits, torque and torque-rate limits, configurable objective terms (<span class="math inline">\(J_{EC}\)</span>, <span class="math inline">\(J_{AEC}\)</span>, <span class="math inline">\(J_{TR}\)</span>, <span class="math inline">\(J_{dF}\)</span>), and the perturbation-based gait optimization routine.</p>
+<p><strong>Language:</strong> MATLAB (Optimization Toolbox)</p>
+<p><a class="btn btn-sm btn-outline-primary" href="https://github.com/yaplenicholas/DSR"><i class="bi bi-github"></i> View repository</a></p>
+</section>
+</section>
+<section id="publications-and-presentations" class="level2">
+<h2 class="anchored" data-anchor-id="publications-and-presentations">Publications and presentations</h2>
+<ul>
+<li><strong>N. Yaple.</strong> <em>Using 2D Predictive Walking Simulations to Investigate Post-stroke Gait Changes with Reduced Torque Capabilities.</em> Ph.D.&nbsp;Dissertation, Mechanical Engineering, The Pennsylvania State University, 2026. <a href="research/dissertation/Yaple_Dissertation_2026.pdf">[PDF]</a></li>
+<li><strong>N. L. Yaple, A. E. Martin.</strong> <em>Changes in Spatiotemporal Asymmetry Due to Weakness and Spasticity in Predictive Walking Simulations.</em> American Society of Biomechanics (ASB) Annual Meeting, 2024. <a href="research/dissertation/Yaple_ASB2024_Abstract.pdf">[Abstract]</a></li>
 </ul>
 </section>
-<section id="technical-approach" class="level3">
-<h3 class="anchored" data-anchor-id="technical-approach">Technical approach</h3>
-<p><strong>MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics · Physics modeling</strong></p>
+<section id="cite-this-work" class="level2">
+<h2 class="anchored" data-anchor-id="cite-this-work">Cite this work</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bibtex code-with-copy"><code class="sourceCode bibtex"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">@phdthesis</span>{<span class="ot">yaple2026predictive</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">author</span> = {Yaple, Nicholas},</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">title</span>  = {Using 2D Predictive Walking Simulations to Investigate</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>            Post-stroke Gait Changes with Reduced Torque Capabilities},</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>  <span class="dt">school</span> = {The Pennsylvania State University},</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="dt">year</span>   = {2026},</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>  <span class="dt">month</span>  = {August},</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="dt">type</span>   = {Ph.D. Dissertation},</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="dt">note</span>   = {Department of Mechanical Engineering}</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-</section>
-<section id="publications-presentations" class="level2">
-<h2 class="anchored" data-anchor-id="publications-presentations">Publications &amp; presentations</h2>
-<p>Add publications, conference presentations, posters, and links here as applicable.</p>
+<section id="acknowledgments" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgments">Acknowledgments</h2>
+<p><strong>Committee:</strong> Anne E. Martin (Advisor and Chair), Jean-Michel Mongeau, Katie Fitzsimons, Joseph Cusumano, and Bryant Seamon (Special Member).</p>
+<p>This material is based upon work supported by the National Science Foundation under Award No.&nbsp;1943561. Any opinions, findings, and conclusions or recommendations expressed are those of the author and do not necessarily reflect the views of the NSF.</p>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -261,7 +637,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/yaplenicholas\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/yaplenicholas\.github\.io");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -674,10 +1050,42 @@ ul.task-list li input[type="checkbox"] {
       &nbsp;
     </div>
     <div class="nav-footer-right">
-      &nbsp;
-    </div>
+<p>Built with <a href="https://quarto.org">Quarto</a></p>
+</div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 
