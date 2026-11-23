@@ -1,28 +1,23 @@
-# Nicholas Yaple — Portfolio Website
+# Nicholas Yaple — Portfolio
 
-Built using Quarto and published using GitHub Pages.
+Quarto portfolio site published at https://yaplenicholas.github.io
+
+## Structure
+- `index.qmd` — home
+- `projects.qmd` — engineering projects
+- `research.qmd` — Ph.D. research overview (dissertation chapters, figures, code, citation)
+- `research/figs/` — web figures exported from the dissertation
+- `research/dissertation/` — dissertation PDF and ASB 2024 abstract
+- `resume.pdf`
 
 ## Local preview
+Install Quarto, then run `quarto preview`.
 
-1. Install Quarto: https://quarto.org/docs/getting-started/
-2. In this directory, run:
+## Publishing
+Pushing to `main` triggers `.github/workflows/publish.yml`, which renders the site and publishes it to the `gh-pages` branch.
+In **Settings → Pages**, the source should be the `gh-pages` branch, root folder.
 
-   ```bash
-   quarto preview
-   ```
-
-## Publish
-
-The included GitHub Actions workflow publishes the site to the `gh-pages` branch when changes are pushed to `main`.
-
-In GitHub, open **Settings → Actions → General → Workflow permissions** and ensure workflows have permission to write to the repository if publishing fails.
-
-Then open **Settings → Pages** and select the `gh-pages` branch (root), if it isn't automatically configured.
-
-## Personalize
-
-- Replace bracketed placeholders in `index.qmd`, `projects.qmd`, and `research.qmd`.
-- Replace `YOUR_EMAIL`.
-- Add `resume.pdf` in the project root.
-- Update LinkedIn URL.
-- Add project images under a folder such as `images/` and reference them in Quarto pages.
+## To do
+- Add the LinkedIn URL in `_quarto.yml` (currently commented out).
+- Create the `yaplenicholas/DSR` repository for the MATLAB simulation code (linked from the Research page).
+- Add visuals for the teleoperation and disc-flight projects.

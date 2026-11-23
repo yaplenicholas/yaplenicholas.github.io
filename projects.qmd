@@ -1,34 +1,49 @@
 ---
 title: "Projects"
 ---
+# Selected engineering projects
 
-# Selected projects
+## Robotic Arm Teleoperation with Vision
+**2025–Present**
 
-Use these pages/cards to showcase the projects most relevant to the roles you are applying for. Focus on your own contributions and evidence of results.
+Designed a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.
 
-## Project 1 — [Name]
+- Captures and interprets human arm position using camera-based perception.
+- Connects perception outputs with robotic control through ROS 2.
+- Explores practical integration of sensing, software, and robot motion.
 
-- **Problem:** [What needed to be solved?]
-- **My contribution:** [What did you do?]
-- **Tools:** [Tools, languages, hardware, methods]
-- **Outcome:** [Results, metrics, demonstrated impact]
+**Technologies:** Python · OpenCV · MediaPipe · ROS 2 · Machine learning
 
-**Links:** [Code](#) · [Paper / report](#) · [Demo / figures](#)
+*Add a system diagram, video, GIF, or demonstration image here.*
 
-## Project 2 — [Name]
+---
 
-- **Problem:** [Challenge]
-- **My contribution:** [Contribution]
-- **Tools:** [Technologies]
-- **Outcome:** [Result]
+## Disc Flight Simulation & Instrumented Data Collection
+**2024–Present**
 
-**Links:** [Code](#) · [Report](#)
+Developed disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.
 
-## Project 3 — [Name]
+- Developed simulation code for disc-flight behavior.
+- Designed an instrumented data-collection approach using IMUs.
+- Use experimentally collected data to validate and improve simulation.
 
-- **Problem:** [Challenge]
-- **My contribution:** [Contribution]
-- **Tools:** [Technologies]
-- **Outcome:** [Result]
+**Technologies:** Python · Physics modeling · IMUs · Experimental validation
 
-**Links:** [Code](#) · [Report](#)
+*Add simulation plots, device photographs, and comparison of simulation with measured data here.*
+
+---
+
+## Predictive Walking Simulation & Control
+**Ph.D. Research**
+
+Developed capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.
+
+![Phase sequence of the two-step periodic gait used in the simulation.](research/figs/gait-phases.png){fig-alt="Stride diagram with affected and unaffected double- and single-support phases."}
+
+- Improved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.
+- Investigated gait changes associated with unilateral torque capability limitations and torque-rate limits.
+- Studied walking objectives and mechanics associated with asymmetry, step length, and double-support time.
+
+**Technologies:** MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics
+
+[Research details →](research.qmd) · [Dissertation (PDF)](research/dissertation/Yaple_Dissertation_2026.pdf) · [DSR code (MATLAB)](https://github.com/yaplenicholas/DSR)

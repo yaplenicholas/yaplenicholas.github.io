@@ -1,32 +1,55 @@
 project:
   type: website
+  resources:
+    - resume.pdf
+    - research/dissertation/*.pdf
 
 website:
   title: "Nicholas Yaple"
-  description: "Research, engineering, and technical projects"
+  description: "Mechanical engineer: robotics simulation, controls, predictive gait simulation, and optimization."
+  site-url: https://yaplenicholas.github.io
+  repo-url: https://github.com/yaplenicholas/yaplenicholas.github.io
+  open-graph: true
+  page-navigation: false
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: projects.qmd
         text: Projects
-      - href: research.qmd
-        text: Research
+      - text: Research
+        menu:
+          - href: research.qmd
+            text: "Ph.D. research overview"
+          - href: research/dissertation/Yaple_Dissertation_2026.pdf
+            text: "Dissertation (PDF)"
+          - href: https://github.com/yaplenicholas/DSR
+            text: "DSR simulation code (MATLAB)"
+      - href: resume.pdf
+        text: Resume
     right:
       - icon: github
         href: https://github.com/yaplenicholas
-      # Replace with your LinkedIn URL
-      - icon: linkedin
-        href: https://www.linkedin.com/
+        aria-label: GitHub
+      # Add your LinkedIn profile URL, then uncomment:
+      # - icon: linkedin
+      #   href: https://www.linkedin.com/in/YOUR-HANDLE/
+      #   aria-label: LinkedIn
+      - icon: envelope
+        href: mailto:yaplenicholas@gmail.com
+        aria-label: Email
   page-footer:
     left: "© 2026 Nicholas Yaple"
-    right: "Built with Quarto"
+    right: "Built with [Quarto](https://quarto.org)"
 
 format:
   html:
-    theme: [cosmo, styles.css]
+    theme: cosmo
+    css: styles.css
     toc: false
     smooth-scroll: true
+    fig-responsive: true
+    lightbox: true
 
 execute:
   freeze: auto
