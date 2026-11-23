@@ -82,11 +82,11 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Projects – Nicholas Yaple">
-<meta property="og:image" content="https://yaplenicholas.github.io/research/figs/gait-phases.png">
+<meta property="og:image" content="https://yaplenicholas.github.io/projects/figs/quilt-studio.png">
 <meta property="og:site_name" content="Nicholas Yaple">
-<meta property="og:image:alt" content="Stride diagram with affected and unaffected double- and single-support phases.">
-<meta property="og:image:height" content="701">
-<meta property="og:image:width" content="1600">
+<meta property="og:image:alt" content="Quilt Studio object editor window showing a flower motif made of five leaf loops, an object library panel, a properties panel, and a stitch order slider.">
+<meta property="og:image:height" content="880">
+<meta property="og:image:width" content="1400">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light"><a id="quarto-skip-link" class="visually-hidden-focusable" href="#quarto-document-content">Skip to main content</a>
@@ -127,8 +127,8 @@ ul.task-list li input[type="checkbox"] {
  <span class="dropdown-text">Dissertation (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/yaplenicholas/DSR">
- <span class="dropdown-text">DSR simulation code (MATLAB)</span></a>
+    <a class="dropdown-item" href="./research.html#code-and-reproducibility">
+ <span class="dropdown-text">Simulation code (MATLAB)</span></a>
   </li>  
     </ul>
   </li>
@@ -195,7 +195,20 @@ ul.task-list li input[type="checkbox"] {
 <li>Explores practical integration of sensing, software, and robot motion.</li>
 </ul>
 <p><strong>Technologies:</strong> Python · OpenCV · MediaPipe · ROS 2 · Machine learning</p>
-<p><em>Add a system diagram, video, GIF, or demonstration image here.</em></p>
+<!-- TODO: add a system diagram, video, GIF, or demonstration image -->
+<hr>
+</section>
+<section id="neural-network-control-of-inverted-pendulums" class="level2">
+<h2 class="anchored" data-anchor-id="neural-network-control-of-inverted-pendulums">Neural-Network Control of Inverted Pendulums</h2>
+<p><strong>Ongoing</strong></p>
+<p>Experimenting with learned controllers for underactuated systems in MATLAB, starting from a cart-pole (block and inverted pendulum) and extending to a double inverted pendulum on a cart.</p>
+<ul>
+<li>Derived the cart-pole and cart–double-pendulum dynamics and built baseline controllers: open-loop, PD, and LQR from the linearized upright model.</li>
+<li>Implemented a flexible multilayer-perceptron controller whose weights are trained with gradient-free optimizers: particle swarm, CMA-ES, and a reward-driven evolutionary strategy (neuroevolution).</li>
+<li>Trained a swing-up network that hands off to an LQR catch controller at the top, and a dual-network (swing-up + stabilization) controller for the double pendulum.</li>
+<li><strong>Next:</strong> rebuilding the systems in MuJoCo to train and test the same controllers in a full physics engine.</li>
+</ul>
+<p><strong>Technologies:</strong> MATLAB · LQR · Neural networks · CMA-ES · Particle swarm optimization · Underactuated control</p>
 <hr>
 </section>
 <section id="disc-flight-simulation-instrumented-data-collection" class="level2">
@@ -208,7 +221,27 @@ ul.task-list li input[type="checkbox"] {
 <li>Use experimentally collected data to validate and improve simulation.</li>
 </ul>
 <p><strong>Technologies:</strong> Python · Physics modeling · IMUs · Experimental validation</p>
-<p><em>Add simulation plots, device photographs, and comparison of simulation with measured data here.</em></p>
+<!-- TODO: add simulation plots, device photos, and sim-vs-measured comparison -->
+<hr>
+</section>
+<section id="quilt-studio-longarm-pantograph-design-app" class="level2">
+<h2 class="anchored" data-anchor-id="quilt-studio-longarm-pantograph-design-app">Quilt Studio: Longarm Pantograph Design App</h2>
+<p><strong>Ongoing · personal project</strong></p>
+<p>A desktop app for designing edge-to-edge (pantograph) patterns for longarm quilting machines, where the whole design has to be stitched as one continuous line. Built in Python using an AI-assisted development workflow.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="projects/figs/quilt-studio.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="The object editor: a flower motif built from linked leaf copies, with the stitch path and its direction shown."><img src="projects/figs/quilt-studio.png" class="img-fluid figure-img" alt="Quilt Studio object editor window showing a flower motif made of five leaf loops, an object library panel, a properties panel, and a stitch order slider."></a></p>
+<figcaption>The object editor: a flower motif built from linked leaf copies, with the stitch path and its direction shown.</figcaption>
+</figure>
+</div>
+<ul>
+<li><strong>Pattern and motif editors</strong> built on chains of cubic Bézier curves, with seamless left-to-right repeats, a library of reusable motifs (hearts, leaves, loops), and live design checks for crossings, sharp points, and seam drift.</li>
+<li><strong>Picture and SVG import:</strong> traces drawings into curves, then routes a single continuous stitch path through every line with the fewest and shortest doubled-back passes (graph-based routing).</li>
+<li><strong>AI-assisted motif editing:</strong> an AI chat reviews a motif with numbered nodes and replies with small, checkable edits that the app applies, rather than redrawing the shape.</li>
+<li>About 57,000 lines of Python (PySide6, NumPy, SciPy, Shapely, NetworkX, scikit-image) with 780+ automated tests.</li>
+</ul>
+<p><strong>Technologies:</strong> Python · PySide6 · Computational geometry · Graph algorithms · AI-assisted workflows</p>
+<p><em>Source code is private.</em></p>
 <hr>
 </section>
 <section id="predictive-walking-simulation-control" class="level2">
@@ -217,7 +250,7 @@ ul.task-list li input[type="checkbox"] {
 <p>Developed capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="research/figs/gait-phases.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Phase sequence of the two-step periodic gait used in the simulation."><img src="research/figs/gait-phases.png" class="img-fluid figure-img" alt="Stride diagram with affected and unaffected double- and single-support phases."></a></p>
+<p><a href="research/figs/gait-phases.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="Phase sequence of the two-step periodic gait used in the simulation."><img src="research/figs/gait-phases.png" class="img-fluid figure-img" alt="Stride diagram with affected and unaffected double- and single-support phases."></a></p>
 <figcaption>Phase sequence of the two-step periodic gait used in the simulation.</figcaption>
 </figure>
 </div>
@@ -227,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Studied walking objectives and mechanics associated with asymmetry, step length, and double-support time.</li>
 </ul>
 <p><strong>Technologies:</strong> MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics</p>
-<p><a href="./research.html">Research details →</a> · <a href="research/dissertation/Yaple_Dissertation_2026.pdf">Dissertation (PDF)</a> · <a href="https://github.com/yaplenicholas/DSR">DSR code (MATLAB)</a></p>
+<p><a href="./research.html">Research details →</a> · <a href="research/dissertation/Yaple_Dissertation_2026.pdf">Dissertation (PDF)</a> · <a href="./research.html#code-and-reproducibility">Simulation code</a></p>
 
 
 </section>

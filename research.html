@@ -191,8 +191,8 @@ window.Quarto = {
  <span class="dropdown-text">Dissertation (PDF)</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="https://github.com/yaplenicholas/DSR">
- <span class="dropdown-text">DSR simulation code (MATLAB)</span></a>
+    <a class="dropdown-item" href="./research.html#code-and-reproducibility">
+ <span class="dropdown-text">Simulation code (MATLAB)</span></a>
   </li>  
     </ul>
   </li>
@@ -270,7 +270,7 @@ window.Quarto = {
 <p><strong>Nicholas Yaple</strong> · Ph.D., Mechanical Engineering · The Pennsylvania State University · August 2026 Advisor: Anne E. Martin, Ph.D.&nbsp;· Gait Optimization (GO) Lab</p>
 </div>
 <div class="hero-buttons">
-<p><a class="btn btn-primary" href="research/dissertation/Yaple_Dissertation_2026.pdf"><i class="bi bi-file-earmark-pdf"></i> Read the dissertation (PDF)</a> <a class="btn btn-outline-primary" href="#code-and-reproducibility"><i class="bi bi-code-slash"></i> MATLAB code</a> <a class="btn btn-outline-primary" href="#cite-this-work"><i class="bi bi-quote"></i> Cite</a></p>
+<p><a class="btn btn-primary" href="research/dissertation/Yaple_Dissertation_2026.pdf"><i class="bi bi-file-earmark-pdf"></i> Read the dissertation (PDF)</a> <a class="btn btn-outline-primary" href="#code-and-reproducibility"><i class="bi bi-code-slash"></i> Simulation code</a> <a class="btn btn-outline-primary" href="#cite-this-work"><i class="bi bi-quote"></i> Cite</a></p>
 </div>
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
@@ -328,7 +328,7 @@ window.Quarto = {
 </section>
 <section id="the-model-and-simulation-framework" class="level2">
 <h2 class="anchored" data-anchor-id="the-model-and-simulation-framework">The model and simulation framework</h2>
-<p>Existing HZD skeletal walking models had point feet, treated double support as instantaneous, or assumed one-step symmetric gait. None of these assumptions holds for post-stroke walking, where double support can exceed 50% of the gait cycle. I merged two earlier models from our lab and extended them into a framework that can walk asymmetrically with finite double support.</p>
+<p>Existing HZD skeletal walking models had point feet, treated double support as instantaneous, or assumed one-step symmetric gait. None of these assumptions holds for post-stroke walking, where double support can exceed 50% of the gait cycle. Working in our lab’s RADIUS simulation platform, I merged two earlier models and extended them into a framework that can walk asymmetrically with finite double support.</p>
 <div class="columns">
 <div class="column" style="width:45%;">
 <div id="fig-biped" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Diagram of six-link planar biped with labeled joint angles q1 through q6 and curved feet on hatched ground.">
@@ -527,12 +527,19 @@ Figure&nbsp;7: Spatiotemporal measures at 0.4 m/s as each objective weight incre
 </section>
 <section id="code-and-reproducibility" class="level2">
 <h2 class="anchored" data-anchor-id="code-and-reproducibility">Code and reproducibility</h2>
-<p>The simulation and optimization framework used throughout the dissertation is written in <strong>MATLAB</strong> and collected as <strong>DSR (Double Support Radius)</strong>.</p>
-<section id="dsr-2d-predictive-walking-simulation-matlab" class="level4 project-card">
-<h4 class="anchored" data-anchor-id="dsr-2d-predictive-walking-simulation-matlab">DSR: 2D predictive walking simulation (MATLAB)</h4>
-<p>Six-link HZD-controlled biped with finite double support, compliant ground contact, two-step periodic asymmetric gaits, torque and torque-rate limits, configurable objective terms (<span class="math inline">\(J_{EC}\)</span>, <span class="math inline">\(J_{AEC}\)</span>, <span class="math inline">\(J_{TR}\)</span>, <span class="math inline">\(J_{dF}\)</span>), and the perturbation-based gait optimization routine.</p>
-<p><strong>Language:</strong> MATLAB (Optimization Toolbox)</p>
-<p><a class="btn btn-sm btn-outline-primary" href="https://github.com/yaplenicholas/DSR"><i class="bi bi-github"></i> View repository</a></p>
+<p>All simulations in the dissertation were run with <strong>DSR</strong>, my MATLAB extension of <strong>RADIUS</strong> (Robot and Amputee DynamIcs Underactuated Simulation), the Gait Optimization Lab’s platform for planar underactuated bipeds developed by Anne E. Martin.</p>
+<section id="dsr-double-support-predictive-walking-simulation-matlab" class="level4 project-card">
+<h4 class="anchored" data-anchor-id="dsr-double-support-predictive-walking-simulation-matlab">DSR: double-support predictive walking simulation (MATLAB)</h4>
+<p>What I added to RADIUS’s six-link HZD walking model:</p>
+<ul>
+<li>Finite double-support dynamics and control, with two-step periodic asymmetric gaits and C² phase continuity</li>
+<li>Compliant ground contact with bristle-style friction</li>
+<li>Unilateral joint-torque limits (weakness) and joint torque-rate limits</li>
+<li>Additional objective terms (<span class="math inline">\(J_{AEC}\)</span>, <span class="math inline">\(J_{TR}\)</span>, <span class="math inline">\(J_{dF}\)</span>) alongside energetic cost</li>
+<li>The perturbation-based gait optimization routine, plus results scripts that regenerate the dissertation figures</li>
+</ul>
+<p><strong>Language:</strong> MATLAB (Optimization Toolbox) · ~175 active scripts and functions · 780 saved gait files</p>
+<p><strong>Availability:</strong> The code builds on lab-owned software, so it is available on request. <a href="mailto:yaplenicholas@gmail.com?subject=DSR%20simulation%20code">Email me</a> to ask about access.</p>
 </section>
 </section>
 <section id="publications-and-presentations" class="level2">
