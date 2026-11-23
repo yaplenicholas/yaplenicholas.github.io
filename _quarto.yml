@@ -23,8 +23,8 @@ website:
             text: "Ph.D. research overview"
           - href: research/dissertation/Yaple_Dissertation_2026.pdf
             text: "Dissertation (PDF)"
-          - href: https://github.com/yaplenicholas/DSR
-            text: "DSR simulation code (MATLAB)"
+          - href: research.qmd#code-and-reproducibility
+            text: "Simulation code (MATLAB)"
       - href: resume.pdf
         text: Resume
     right:

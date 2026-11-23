@@ -19,5 +19,5 @@ In **Settings → Pages**, the source should be the `gh-pages` branch, root fold
 
 ## To do
 - Add the LinkedIn URL in `_quarto.yml` (currently commented out).
-- Create the `yaplenicholas/DSR` repository for the MATLAB simulation code (linked from the Research page).
+- The DSR simulation code is in a **private** repo (`yaplenicholas/DSR`) and listed as "available on request" on the Research page. If Dr. Martin approves a public release, add a license and link the repo in `research.qmd` (Code and reproducibility section) and in the Research menu in `_quarto.yml`.
 - Add visuals for the teleoperation and disc-flight projects.

@@ -16,7 +16,7 @@ Advisor: Anne E. Martin, Ph.D. · Gait Optimization (GO) Lab
 
 <div class="hero-buttons">
 <a class="btn btn-primary" href="research/dissertation/Yaple_Dissertation_2026.pdf"><i class="bi bi-file-earmark-pdf"></i> Read the dissertation (PDF)</a>
-<a class="btn btn-outline-primary" href="#code-and-reproducibility"><i class="bi bi-code-slash"></i> MATLAB code</a>
+<a class="btn btn-outline-primary" href="#code-and-reproducibility"><i class="bi bi-code-slash"></i> Simulation code</a>
 <a class="btn btn-outline-primary" href="#cite-this-work"><i class="bi bi-quote"></i> Cite</a>
 </div>
 
@@ -76,7 +76,7 @@ Overall, using torque capability limitations, we investigated how directly restr
 
 ## The model and simulation framework
 
-Existing HZD skeletal walking models had point feet, treated double support as instantaneous, or assumed one-step symmetric gait. None of these assumptions holds for post-stroke walking, where double support can exceed 50% of the gait cycle. I merged two earlier models from our lab and extended them into a framework that can walk asymmetrically with finite double support.
+Existing HZD skeletal walking models had point feet, treated double support as instantaneous, or assumed one-step symmetric gait. None of these assumptions holds for post-stroke walking, where double support can exceed 50% of the gait cycle. Working in our lab's RADIUS simulation platform, I merged two earlier models and extended them into a framework that can walk asymmetrically with finite double support.
 
 ::: {.columns}
 ::: {.column width="45%"}
@@ -201,16 +201,22 @@ A regression analysis of combined objectives examined interaction effects betwee
 
 ## Code and reproducibility {#code-and-reproducibility}
 
-The simulation and optimization framework used throughout the dissertation is written in **MATLAB** and collected as **DSR (Double Support Radius)**.
+All simulations in the dissertation were run with **DSR**, my MATLAB extension of **RADIUS** (Robot and Amputee DynamIcs Underactuated Simulation), the Gait Optimization Lab's platform for planar underactuated bipeds developed by Anne E. Martin.
 
 ::: {.project-card}
-#### DSR: 2D predictive walking simulation (MATLAB)
+#### DSR: double-support predictive walking simulation (MATLAB)
 
-Six-link HZD-controlled biped with finite double support, compliant ground contact, two-step periodic asymmetric gaits, torque and torque-rate limits, configurable objective terms ($J_{EC}$, $J_{AEC}$, $J_{TR}$, $J_{dF}$), and the perturbation-based gait optimization routine.
+What I added to RADIUS's six-link HZD walking model:
 
-**Language:** MATLAB (Optimization Toolbox)
+- Finite double-support dynamics and control, with two-step periodic asymmetric gaits and C² phase continuity
+- Compliant ground contact with bristle-style friction
+- Unilateral joint-torque limits (weakness) and joint torque-rate limits
+- Additional objective terms ($J_{AEC}$, $J_{TR}$, $J_{dF}$) alongside energetic cost
+- The perturbation-based gait optimization routine, plus results scripts that regenerate the dissertation figures
 
-<a class="btn btn-sm btn-outline-primary" href="https://github.com/yaplenicholas/DSR"><i class="bi bi-github"></i> View repository</a>
+**Language:** MATLAB (Optimization Toolbox) · ~175 active scripts and functions · 780 saved gait files
+
+**Availability:** The code builds on lab-owned software, so it is available on request. <a href="mailto:yaplenicholas@gmail.com?subject=DSR%20simulation%20code">Email me</a> to ask about access.
 :::
 
 ## Publications and presentations

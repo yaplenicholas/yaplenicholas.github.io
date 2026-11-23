@@ -46,4 +46,4 @@ Developed capabilities for a 2D lower-body skeletal model in MATLAB using hybrid
 
 **Technologies:** MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics
 
-[Research details →](research.qmd) · [Dissertation (PDF)](research/dissertation/Yaple_Dissertation_2026.pdf) · [DSR code (MATLAB)](https://github.com/yaplenicholas/DSR)
+[Research details →](research.qmd) · [Dissertation (PDF)](research/dissertation/Yaple_Dissertation_2026.pdf) · [Simulation code](research.qmd#code-and-reproducibility)
