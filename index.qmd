@@ -53,10 +53,10 @@ Building disc-flight simulations and an instrumented data-collection device usin
 
 ## Current engineering work
 
-**Contract Engineer — Wabtec**  
+**Control Engineer II (Contract) — Wabtec**  
 *October 2026–Present*
 
-Converting, optimizing, and testing control systems from legacy software into MATLAB/Simulink-based implementations.
+Converting legacy control software into optimized MATLAB/Simulink implementations, and validating the converted controllers from simulation to real-world operation (sim-to-real).
 
 ## Technical areas
 - **Simulation & modeling:** predictive simulation, physics modeling, trajectory optimization, gait simulation
