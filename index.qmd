@@ -67,7 +67,7 @@ Also on the [projects page](projects.qmd): [Quilt Studio](projects.qmd#quilt-stu
 **Control Engineer II (Contract via Bentley Resources) — Wabtec, Erie, PA**  
 *October 2026–Present*
 
-Converting legacy control software into optimized MATLAB/Simulink implementations and testing the converted controllers in simulation against legacy behavior, ahead of real-world (sim-to-real) validation.
+Converting legacy control software into optimized MATLAB/Simulink implementations, testing the converted controllers in simulation against legacy behavior ahead of real-world (sim-to-real) validation, and reviewing the C++ code generated from the Simulink models for deployment.
 
 ## Technical areas
 - **Simulation & modeling:** predictive simulation, physics modeling, trajectory optimization, gait simulation
