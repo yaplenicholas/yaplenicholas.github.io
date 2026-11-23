@@ -1,47 +1,5 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning\n\n\n\n\n\nOngoing\nExperimenting with learned controllers for underactuated systems in MATLAB, starting from a cart-pole (block and inverted pendulum) and extending to a double inverted pendulum on a cart.\n\nDerived the cart-pole and cart–double-pendulum dynamics and built baseline controllers: open-loop, PD, and LQR from the linearized upright model.\nImplemented a flexible multilayer-perceptron controller whose weights are trained with gradient-free optimizers: particle swarm, CMA-ES, and a reward-driven evolutionary strategy (neuroevolution).\nTrained a swing-up network that hands off to an LQR catch controller at the top, and a dual-network (swing-up + stabilization) controller for the double pendulum.\nNext: rebuilding the systems in MuJoCo to train and test the same controllers in a full physics engine.\n\nTechnologies: MATLAB · LQR · Neural networks · CMA-ES · Particle swarm optimization · Underactuated control\n\n\n\n\n2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation\n\n\n\n\n\nOngoing · personal project\nA desktop app for designing edge-to-edge (pantograph) patterns for longarm quilting machines, where the whole design has to be stitched as one continuous line. Built in Python using an AI-assisted development workflow.\n\n\n\nThe object editor: a flower motif built from linked leaf copies, with the stitch path and its direction shown.\n\n\n\nPattern and motif editors built on chains of cubic Bézier curves, with seamless left-to-right repeats, a library of reusable motifs (hearts, leaves, loops), and live design checks for crossings, sharp points, and seam drift.\nPicture and SVG import: traces drawings into curves, then routes a single continuous stitch path through every line with the fewest and shortest doubled-back passes (graph-based routing).\nAI-assisted motif editing: an AI chat reviews a motif with numbered nodes and replies with small, checkable edits that the app applies, rather than redrawing the shape.\nAbout 57,000 lines of Python (PySide6, NumPy, SciPy, Shapely, NetworkX, scikit-image) with 780+ automated tests.\n\nTechnologies: Python · PySide6 · Computational geometry · Graph algorithms · AI-assisted workflows\nSource code is private.\n\n\n\n\nPh.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\n\n\nPhase sequence of the two-step periodic gait used in the simulation.\n\n\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics\nResearch details → · Dissertation (PDF) · Simulation code"
-  },
-  {
-    "objectID": "projects.html#robotic-arm-teleoperation-with-vision",
-    "href": "projects.html#robotic-arm-teleoperation-with-vision",
-    "title": "Projects",
-    "section": "",
-    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning"
-  },
-  {
-    "objectID": "projects.html#neural-network-control-of-inverted-pendulums",
-    "href": "projects.html#neural-network-control-of-inverted-pendulums",
-    "title": "Projects",
-    "section": "",
-    "text": "Ongoing\nExperimenting with learned controllers for underactuated systems in MATLAB, starting from a cart-pole (block and inverted pendulum) and extending to a double inverted pendulum on a cart.\n\nDerived the cart-pole and cart–double-pendulum dynamics and built baseline controllers: open-loop, PD, and LQR from the linearized upright model.\nImplemented a flexible multilayer-perceptron controller whose weights are trained with gradient-free optimizers: particle swarm, CMA-ES, and a reward-driven evolutionary strategy (neuroevolution).\nTrained a swing-up network that hands off to an LQR catch controller at the top, and a dual-network (swing-up + stabilization) controller for the double pendulum.\nNext: rebuilding the systems in MuJoCo to train and test the same controllers in a full physics engine.\n\nTechnologies: MATLAB · LQR · Neural networks · CMA-ES · Particle swarm optimization · Underactuated control"
-  },
-  {
-    "objectID": "projects.html#disc-flight-simulation-instrumented-data-collection",
-    "href": "projects.html#disc-flight-simulation-instrumented-data-collection",
-    "title": "Projects",
-    "section": "",
-    "text": "2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation"
-  },
-  {
-    "objectID": "projects.html#quilt-studio-longarm-pantograph-design-app",
-    "href": "projects.html#quilt-studio-longarm-pantograph-design-app",
-    "title": "Projects",
-    "section": "",
-    "text": "Ongoing · personal project\nA desktop app for designing edge-to-edge (pantograph) patterns for longarm quilting machines, where the whole design has to be stitched as one continuous line. Built in Python using an AI-assisted development workflow.\n\n\n\nThe object editor: a flower motif built from linked leaf copies, with the stitch path and its direction shown.\n\n\n\nPattern and motif editors built on chains of cubic Bézier curves, with seamless left-to-right repeats, a library of reusable motifs (hearts, leaves, loops), and live design checks for crossings, sharp points, and seam drift.\nPicture and SVG import: traces drawings into curves, then routes a single continuous stitch path through every line with the fewest and shortest doubled-back passes (graph-based routing).\nAI-assisted motif editing: an AI chat reviews a motif with numbered nodes and replies with small, checkable edits that the app applies, rather than redrawing the shape.\nAbout 57,000 lines of Python (PySide6, NumPy, SciPy, Shapely, NetworkX, scikit-image) with 780+ automated tests.\n\nTechnologies: Python · PySide6 · Computational geometry · Graph algorithms · AI-assisted workflows\nSource code is private."
-  },
-  {
-    "objectID": "projects.html#predictive-walking-simulation-control",
-    "href": "projects.html#predictive-walking-simulation-control",
-    "title": "Projects",
-    "section": "",
-    "text": "Ph.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\n\n\nPhase sequence of the two-step periodic gait used in the simulation.\n\n\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics\nResearch details → · Dissertation (PDF) · Simulation code"
-  },
-  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Ph.D. Research",
@@ -159,5 +117,47 @@
     "title": "Nicholas Yaple",
     "section": "",
     "text": "My interests center on simulation and control of dynamic systems, robotics, modeling, optimization, and translating engineering concepts into working implementations. I enjoy problems that connect software, physics, hardware, and measurable system performance."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning\n\n\n\n\n\nOngoing\nExperimenting with learned controllers for underactuated systems in MATLAB, starting from a cart-pole (block and inverted pendulum) and extending to a double inverted pendulum on a cart.\n\nDerived the cart-pole and cart–double-pendulum dynamics and built baseline controllers: open-loop, PD, and LQR from the linearized upright model.\nImplemented a flexible multilayer-perceptron controller whose weights are trained with gradient-free optimizers: particle swarm, CMA-ES, and a reward-driven evolutionary strategy (neuroevolution).\nTrained a swing-up network that hands off to an LQR catch controller at the top, and a dual-network (swing-up + stabilization) controller for the double pendulum.\nNext: rebuilding the systems in MuJoCo to train and test the same controllers in a full physics engine.\n\nTechnologies: MATLAB · LQR · Neural networks · CMA-ES · Particle swarm optimization · Underactuated control\n\n\n\n\n2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation\n\n\n\n\n\nOngoing · personal project\nA desktop app for designing edge-to-edge (pantograph) patterns for longarm quilting machines, where the whole design has to be stitched as one continuous line. Built in Python using an AI-assisted development workflow.\n\n\n\nThe object editor: a flower motif built from linked leaf copies, with the stitch path and its direction shown.\n\n\n\nPattern and motif editors built on chains of cubic Bézier curves, with seamless left-to-right repeats, a library of reusable motifs (hearts, leaves, loops), and live design checks for crossings, sharp points, and seam drift.\nPicture and SVG import: traces drawings into curves, then routes a single continuous stitch path through every line with the fewest and shortest doubled-back passes (graph-based routing).\nAI-assisted motif editing: an AI chat reviews a motif with numbered nodes and replies with small, checkable edits that the app applies, rather than redrawing the shape.\nAbout 57,000 lines of Python (PySide6, NumPy, SciPy, Shapely, NetworkX, scikit-image) with 780+ automated tests.\n\nTechnologies: Python · PySide6 · Computational geometry · Graph algorithms · AI-assisted workflows\nSource code is private.\n\n\n\n\nPh.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\n\n\nPhase sequence of the two-step periodic gait used in the simulation.\n\n\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics\nResearch details → · Dissertation (PDF) · Simulation code"
+  },
+  {
+    "objectID": "projects.html#robotic-arm-teleoperation-with-vision",
+    "href": "projects.html#robotic-arm-teleoperation-with-vision",
+    "title": "Projects",
+    "section": "",
+    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning"
+  },
+  {
+    "objectID": "projects.html#neural-network-control-of-inverted-pendulums",
+    "href": "projects.html#neural-network-control-of-inverted-pendulums",
+    "title": "Projects",
+    "section": "",
+    "text": "Ongoing\nExperimenting with learned controllers for underactuated systems in MATLAB, starting from a cart-pole (block and inverted pendulum) and extending to a double inverted pendulum on a cart.\n\nDerived the cart-pole and cart–double-pendulum dynamics and built baseline controllers: open-loop, PD, and LQR from the linearized upright model.\nImplemented a flexible multilayer-perceptron controller whose weights are trained with gradient-free optimizers: particle swarm, CMA-ES, and a reward-driven evolutionary strategy (neuroevolution).\nTrained a swing-up network that hands off to an LQR catch controller at the top, and a dual-network (swing-up + stabilization) controller for the double pendulum.\nNext: rebuilding the systems in MuJoCo to train and test the same controllers in a full physics engine.\n\nTechnologies: MATLAB · LQR · Neural networks · CMA-ES · Particle swarm optimization · Underactuated control"
+  },
+  {
+    "objectID": "projects.html#disc-flight-simulation-instrumented-data-collection",
+    "href": "projects.html#disc-flight-simulation-instrumented-data-collection",
+    "title": "Projects",
+    "section": "",
+    "text": "2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation"
+  },
+  {
+    "objectID": "projects.html#quilt-studio-longarm-pantograph-design-app",
+    "href": "projects.html#quilt-studio-longarm-pantograph-design-app",
+    "title": "Projects",
+    "section": "",
+    "text": "Ongoing · personal project\nA desktop app for designing edge-to-edge (pantograph) patterns for longarm quilting machines, where the whole design has to be stitched as one continuous line. Built in Python using an AI-assisted development workflow.\n\n\n\nThe object editor: a flower motif built from linked leaf copies, with the stitch path and its direction shown.\n\n\n\nPattern and motif editors built on chains of cubic Bézier curves, with seamless left-to-right repeats, a library of reusable motifs (hearts, leaves, loops), and live design checks for crossings, sharp points, and seam drift.\nPicture and SVG import: traces drawings into curves, then routes a single continuous stitch path through every line with the fewest and shortest doubled-back passes (graph-based routing).\nAI-assisted motif editing: an AI chat reviews a motif with numbered nodes and replies with small, checkable edits that the app applies, rather than redrawing the shape.\nAbout 57,000 lines of Python (PySide6, NumPy, SciPy, Shapely, NetworkX, scikit-image) with 780+ automated tests.\n\nTechnologies: Python · PySide6 · Computational geometry · Graph algorithms · AI-assisted workflows\nSource code is private."
+  },
+  {
+    "objectID": "projects.html#predictive-walking-simulation-control",
+    "href": "projects.html#predictive-walking-simulation-control",
+    "title": "Projects",
+    "section": "",
+    "text": "Ph.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\n\n\nPhase sequence of the two-step periodic gait used in the simulation.\n\n\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics\nResearch details → · Dissertation (PDF) · Simulation code"
   }
 ]
