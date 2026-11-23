@@ -14,7 +14,21 @@ Designed a modified control approach for an existing robotic arm using human arm
 
 **Technologies:** Python · OpenCV · MediaPipe · ROS 2 · Machine learning
 
-*Add a system diagram, video, GIF, or demonstration image here.*
+<!-- TODO: add a system diagram, video, GIF, or demonstration image -->
+
+---
+
+## Neural-Network Control of Inverted Pendulums
+**Ongoing**
+
+Experimenting with learned controllers for underactuated systems in MATLAB, starting from a cart-pole (block and inverted pendulum) and extending to a double inverted pendulum on a cart.
+
+- Derived the cart-pole and cart–double-pendulum dynamics and built baseline controllers: open-loop, PD, and LQR from the linearized upright model.
+- Implemented a flexible multilayer-perceptron controller whose weights are trained with gradient-free optimizers: particle swarm, CMA-ES, and a reward-driven evolutionary strategy (neuroevolution).
+- Trained a swing-up network that hands off to an LQR catch controller at the top, and a dual-network (swing-up + stabilization) controller for the double pendulum.
+- **Next:** rebuilding the systems in MuJoCo to train and test the same controllers in a full physics engine.
+
+**Technologies:** MATLAB · LQR · Neural networks · CMA-ES · Particle swarm optimization · Underactuated control
 
 ---
 
@@ -29,7 +43,25 @@ Developed disc-flight simulations in Python and worked on an in-development inst
 
 **Technologies:** Python · Physics modeling · IMUs · Experimental validation
 
-*Add simulation plots, device photographs, and comparison of simulation with measured data here.*
+<!-- TODO: add simulation plots, device photos, and sim-vs-measured comparison -->
+
+---
+
+## Quilt Studio: Longarm Pantograph Design App
+**Ongoing · personal project**
+
+A desktop app for designing edge-to-edge (pantograph) patterns for longarm quilting machines, where the whole design has to be stitched as one continuous line. Built in Python using an AI-assisted development workflow.
+
+![The object editor: a flower motif built from linked leaf copies, with the stitch path and its direction shown.](projects/figs/quilt-studio.png){fig-alt="Quilt Studio object editor window showing a flower motif made of five leaf loops, an object library panel, a properties panel, and a stitch order slider."}
+
+- **Pattern and motif editors** built on chains of cubic Bézier curves, with seamless left-to-right repeats, a library of reusable motifs (hearts, leaves, loops), and live design checks for crossings, sharp points, and seam drift.
+- **Picture and SVG import:** traces drawings into curves, then routes a single continuous stitch path through every line with the fewest and shortest doubled-back passes (graph-based routing).
+- **AI-assisted motif editing:** an AI chat reviews a motif with numbered nodes and replies with small, checkable edits that the app applies, rather than redrawing the shape.
+- About 57,000 lines of Python (PySide6, NumPy, SciPy, Shapely, NetworkX, scikit-image) with 780+ automated tests.
+
+**Technologies:** Python · PySide6 · Computational geometry · Graph algorithms · AI-assisted workflows
+
+*Source code is private.*
 
 ---
 

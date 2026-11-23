@@ -43,13 +43,24 @@ Developing a camera-based teleoperation system mapping human arm position to a r
 :::
 
 ::: {.project-card}
+### Neural-Network Control of Inverted Pendulums
+Training neural-network controllers for cart-pole and double inverted pendulums with gradient-free optimizers (CMA-ES, particle swarm), handing off to LQR stabilization. A MuJoCo version is next.
+
+**Focus:** Underactuated control · MATLAB · LQR · Neural networks · Optimization
+
+[Project details →](projects.qmd#neural-network-control-of-inverted-pendulums)
+:::
+
+::: {.project-card}
 ### Disc Flight Simulation & Instrumentation
 Building disc-flight simulations and an instrumented data-collection device using IMUs, with experimentally collected data used to validate simulation behavior.
 
 **Focus:** Physics simulation · Python · Instrumentation · Experimental validation
 
-[Project details →](projects.qmd)
+[Project details →](projects.qmd#disc-flight-simulation-instrumented-data-collection)
 :::
+
+Also on the [projects page](projects.qmd): [Quilt Studio](projects.qmd#quilt-studio-longarm-pantograph-design-app), a Python desktop app for designing continuous-line longarm quilting patterns.
 
 ## Current engineering work
 
@@ -63,7 +74,7 @@ Converting legacy control software into optimized MATLAB/Simulink implementation
 - **Controls:** robotic control, hybrid zero dynamics, control-system conversion and testing
 - **Software:** MATLAB, Simulink, Python
 - **Robotics & integration:** ROS 2, computer vision, microcontrollers, mechatronics
-- **Currently developing:** MuJoCo, NVIDIA Isaac Sim, MJCF robot modeling, ROS 2 simulation workflows
+- **Currently developing:** MuJoCo, NVIDIA Isaac Sim, ROS 2 simulation workflows
 - **Engineering:** biomechanics, solid mechanics, instrumentation, experimental analysis
 
 ## About
