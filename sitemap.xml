@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://yaplenicholas.github.io/projects.html</loc>
-    <lastmod>2026-11-23T06:54:41.514Z</lastmod>
-  </url>
-  <url>
     <loc>https://yaplenicholas.github.io/research.html</loc>
-    <lastmod>2026-11-23T06:54:41.514Z</lastmod>
+    <lastmod>2026-11-23T06:51:06.210Z</lastmod>
   </url>
   <url>
     <loc>https://yaplenicholas.github.io/index.html</loc>
-    <lastmod>2026-11-23T06:54:41.514Z</lastmod>
+    <lastmod>2026-11-23T06:51:06.238Z</lastmod>
+  </url>
+  <url>
+    <loc>https://yaplenicholas.github.io/projects.html</loc>
+    <lastmod>2026-11-23T06:51:06.224Z</lastmod>
   </url>
 </urlset>

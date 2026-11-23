@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
-    "section": "",
-    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning\nAdd a system diagram, video, GIF, or demonstration image here.\n\n\n\n\n2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation\nAdd simulation plots, device photographs, and comparison of simulation with measured data here.\n\n\n\n\nPh.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\n\n\nPhase sequence of the two-step periodic gait used in the simulation.\n\n\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics\nResearch details → · Dissertation (PDF) · DSR code (MATLAB)"
-  },
-  {
-    "objectID": "projects.html#robotic-arm-teleoperation-with-vision",
-    "href": "projects.html#robotic-arm-teleoperation-with-vision",
-    "title": "Projects",
-    "section": "",
-    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning\nAdd a system diagram, video, GIF, or demonstration image here."
-  },
-  {
-    "objectID": "projects.html#disc-flight-simulation-instrumented-data-collection",
-    "href": "projects.html#disc-flight-simulation-instrumented-data-collection",
-    "title": "Projects",
-    "section": "",
-    "text": "2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation\nAdd simulation plots, device photographs, and comparison of simulation with measured data here."
-  },
-  {
-    "objectID": "projects.html#predictive-walking-simulation-control",
-    "href": "projects.html#predictive-walking-simulation-control",
-    "title": "Projects",
-    "section": "",
-    "text": "Ph.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\n\n\nPhase sequence of the two-step periodic gait used in the simulation.\n\n\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics\nResearch details → · Dissertation (PDF) · DSR code (MATLAB)"
-  },
-  {
     "objectID": "research.html",
     "href": "research.html",
     "title": "Ph.D. Research",
@@ -145,5 +117,33 @@
     "title": "Nicholas Yaple",
     "section": "",
     "text": "My interests center on simulation and control of dynamic systems, robotics, modeling, optimization, and translating engineering concepts into working implementations. I enjoy problems that connect software, physics, hardware, and measurable system performance."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning\nAdd a system diagram, video, GIF, or demonstration image here.\n\n\n\n\n2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation\nAdd simulation plots, device photographs, and comparison of simulation with measured data here.\n\n\n\n\nPh.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\n\n\nPhase sequence of the two-step periodic gait used in the simulation.\n\n\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics\nResearch details → · Dissertation (PDF) · DSR code (MATLAB)"
+  },
+  {
+    "objectID": "projects.html#robotic-arm-teleoperation-with-vision",
+    "href": "projects.html#robotic-arm-teleoperation-with-vision",
+    "title": "Projects",
+    "section": "",
+    "text": "2025–Present\nDesigned a modified control approach for an existing robotic arm using human arm positions captured from a single camera. The system integrates Python, OpenCV, MediaPipe pose detection, ROS 2, and machine-learning components.\n\nCaptures and interprets human arm position using camera-based perception.\nConnects perception outputs with robotic control through ROS 2.\nExplores practical integration of sensing, software, and robot motion.\n\nTechnologies: Python · OpenCV · MediaPipe · ROS 2 · Machine learning\nAdd a system diagram, video, GIF, or demonstration image here."
+  },
+  {
+    "objectID": "projects.html#disc-flight-simulation-instrumented-data-collection",
+    "href": "projects.html#disc-flight-simulation-instrumented-data-collection",
+    "title": "Projects",
+    "section": "",
+    "text": "2024–Present\nDeveloped disc-flight simulations in Python and worked on an in-development instrumented disc using IMUs to collect real-world throw statistics.\n\nDeveloped simulation code for disc-flight behavior.\nDesigned an instrumented data-collection approach using IMUs.\nUse experimentally collected data to validate and improve simulation.\n\nTechnologies: Python · Physics modeling · IMUs · Experimental validation\nAdd simulation plots, device photographs, and comparison of simulation with measured data here."
+  },
+  {
+    "objectID": "projects.html#predictive-walking-simulation-control",
+    "href": "projects.html#predictive-walking-simulation-control",
+    "title": "Projects",
+    "section": "",
+    "text": "Ph.D. Research\nDeveloped capabilities for a 2D lower-body skeletal model in MATLAB using hybrid zero-dynamics (HZD)-based control to perform two-step periodic predictive walking simulations.\n\n\n\nPhase sequence of the two-step periodic gait used in the simulation.\n\n\n\nImproved simulation capabilities for foot-ground interaction, impacts, walking mechanics, and optimization. The new routine found baseline gaits with more than 20% lower energetic cost.\nInvestigated gait changes associated with unilateral torque capability limitations and torque-rate limits.\nStudied walking objectives and mechanics associated with asymmetry, step length, and double-support time.\n\nTechnologies: MATLAB · Predictive simulation · Optimization · HZD-based control · Biomechanics\nResearch details → · Dissertation (PDF) · DSR code (MATLAB)"
   }
 ]
